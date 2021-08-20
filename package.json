@@ -1,0 +1,16 @@
+{
+  "name": "eleventy-personal-site",
+  "version": "1.0.0",
+  "description": "Personal website built with eleventy.",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "Joe Petrillo",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}

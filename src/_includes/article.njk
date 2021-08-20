@@ -1,0 +1,13 @@
+---
+layout: 'base.njk'
+---
+
+<section>
+    <h2 class="section-header">{{ title }}</h2>
+    <p class="section-date">Posted {{ date | postDate }}</p>
+
+    <article>
+        {{ content | safe }}
+    </article>
+
+</section>
