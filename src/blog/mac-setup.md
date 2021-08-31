@@ -12,7 +12,7 @@ Since it was my first time on macOS, I suspect I made some mistakes that would n
 
 I don't think I will ever automate this process. I prefer making small changes and reminding myself of everything I do each time I start fresh.
 
-## System Preferences
+### System Preferences
 
 Not much is changed. If not specified, I leave it default.
 
@@ -68,7 +68,7 @@ Tip - Move icons around by holding CMD while dragging
 - Change computer name to something better
 - Make sure everything is unchecked. (unless you need them)
 
-## Finder Settings
+### Finder Settings
 
 **General**
 - Uncheck all items to show on desktop
@@ -83,7 +83,7 @@ Tip - Move icons around by holding CMD while dragging
 
 ![My Finder setup](https://i.imgur.com/VGNCSeN.png)
 
-## Install Tools + Apps
+### Install Tools + Apps
 
 Start this process by installing homebrew
 
@@ -125,7 +125,7 @@ Install [Affinity Photo](https://affinity.serif.com/en-us/photo/)
 Install [Fig](https://fig.io)
 	- `Early Access on Website`
 
-## Configuration
+### Configuration
 
 **iTerm2**
 - Import favorite theme. Browse them [here](https://iterm2colorschemes.com).
@@ -152,7 +152,7 @@ Install [Fig](https://fig.io)
 `git config --global init.defaultBranch main`
 `git config --global core.editor "code -w"`
 
-## Conclusion
+### Conclusion
 
 This sums up my current preferences for setting up a fresh macOS install. I like to keep it simple. I still have lots to learn and this will most likely become more complex in the future. But for now this will do.
 
