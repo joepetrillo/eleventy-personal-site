@@ -272,7 +272,7 @@ header {
 /* =========== ARTICLE CARD =========== */
 
 .article-card {
-    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     padding: 1rem;
     margin: var(--vspace) 0;
