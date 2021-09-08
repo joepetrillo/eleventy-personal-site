@@ -273,7 +273,7 @@ header {
 
 .article-card {
     border-bottom: 4px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
+    border-radius: 9px 9px 0 0;
     padding: 1rem;
     margin: var(--vspace) 0;
     transition: all 0.1s ease-out;
