@@ -40,9 +40,9 @@ body {
     /* margin: 0 auto; */
 }
 
-body.is-active {
+/* body.is-active {
     overflow: hidden;
-}
+} */
 
 main {
     max-width: 65ch;
