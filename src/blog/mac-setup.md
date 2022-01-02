@@ -87,8 +87,6 @@ Tip - Move icons around by holding CMD while dragging
 
 Start this process by installing homebrew
 
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
 Install [iTerm2](https://iterm2.com)
 	- `brew install --cask iterm2`
 
@@ -144,13 +142,11 @@ Install [Fig](https://fig.io)
 	- [VSCode Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 
 **Git Settings**
-- Identity
-`git config --global user.name "Name Here"`
-`git config --global user.email foo@gmail.com`
+- `git config --global user.name "Name Here"`
+- `git config --global user.email foo@gmail.com`
 
-- Other
-`git config --global init.defaultBranch main`
-`git config --global core.editor "code -w"`
+- `git config --global init.defaultBranch main`
+- `git config --global core.editor "code -w"`
 
 ### Conclusion
 

@@ -154,6 +154,28 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
+li {
+    margin-bottom: var(--vspace-3);
+}
+
+li ul {
+    margin-top: var(--vspace-3);
+    list-style-type: disc;
+}
+
+li a {
+    text-decoration: underline;
+}
+
+p a {
+    text-decoration: underline;
+}
+
+code {
+    padding: 0.75rem;
+    background-color:var(--dark-accent-color);
+}
+
 /* =========== HEADER =========== */
 
 header {
