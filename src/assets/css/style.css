@@ -172,8 +172,9 @@ p a {
 }
 
 code {
-    padding: 0.75rem;
+    padding: 0.4rem;
     background-color:var(--dark-accent-color);
+    display: block;
 }
 
 /* =========== HEADER =========== */
@@ -401,6 +402,14 @@ section {
     background-repeat: no-repeat;
     background-size: 100% 0.35rem;
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    margin-bottom: var(--vspace);
+    color: var(--light-accent-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* =========== MEDIA QUERIES =========== */

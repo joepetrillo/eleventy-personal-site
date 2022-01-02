@@ -88,47 +88,47 @@ Tip - Move icons around by holding CMD while dragging
 Start this process by installing homebrew
 
 Install [iTerm2](https://iterm2.com)
-	- `brew install --cask iterm2`
+	 `brew install --cask iterm2`
 
 Install [Discord](https://discord.com)
-	- `brew install --cask discord`
+	 `brew install --cask discord`
 
 Install [VS Code](https://code.visualstudio.com)
-	- `brew install --cask visual-studio-code`
+	 `brew install --cask visual-studio-code`
 
 Install [Brave](https://brave.com)
-	- `brew install --cask brave-browser`
+	 `brew install --cask brave-browser`
 
 Install [Git](https://git-scm.com)
-	- `brew install git`
+	 `brew install git`
 
 Install [Node](https://nodejs.org/en/)
-	- `brew install node`
+	 `brew install node`
 
 Install [Neofetch](https://github.com/dylanaraps/neofetch)
-	- `brew install neofetch`
+	 `brew install neofetch`
 
 Install [Xcode](https://developer.apple.com/xcode/)
-	- `On the App Store`
+	 `On the App Store`
 
 Install [Magnet](https://magnet.crowdcafe.com)
-	- `On the App Store`
+	 `On the App Store`
 
 Install [Affinity Designer](https://affinity.serif.com/en-us/designer/)
-	- `On the App Store`
+	 `On the App Store`
 
 Install [Affinity Photo](https://affinity.serif.com/en-us/photo/)
-	- `On the App Store`
+	 `On the App Store`
 
 Install [Fig](https://fig.io)
-	- `Early Access on Website`
+	 `Early Access on Website`
 
 ### Configuration
 
 **iTerm2**
 - Import favorite theme. Browse them [here](https://iterm2colorschemes.com).
 - Increase font size to 14.
-- Hide login message using `touch .hushlogin`
+- Hide login message using touch .hushlogin
 
 **VS Code**
 - Install favorite theme
