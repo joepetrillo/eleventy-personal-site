@@ -29,22 +29,90 @@
   --mg-xl4: 5rem;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	border: 0;
-	margin: 0;
-	padding: 0;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ::selection {
@@ -54,7 +122,9 @@ time, mark, audio, video {
   background: #353757; /* Gecko Browsers */
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
@@ -74,11 +144,17 @@ body.is-active {
   overflow: hidden;
 }
 
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
 }
 
@@ -107,12 +183,14 @@ p {
   line-height: var(--normal-line-height);
 }
 
-img, picture {
+img,
+picture {
   max-width: 100%;
   display: block;
 }
 
-article h2, article h3 {
+article h2,
+article h3 {
   margin-bottom: 1em;
 }
 
@@ -132,17 +210,16 @@ section {
   justify-content: space-between;
 }
 
-
 /* =========== SCROLLBAR =========== */
 
 body::-webkit-scrollbar {
   width: 0.5rem;
 }
- 
+
 body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0,0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
- 
+
 body::-webkit-scrollbar-thumb {
   background-color: var(--light-accent-color);
   border-radius: 6px;
@@ -175,10 +252,11 @@ body::-webkit-scrollbar-thumb {
   width: 40px;
 }
 
-.nav-btn-burger::before, .nav-btn-burger::after {
+.nav-btn-burger::before,
+.nav-btn-burger::after {
   background-color: var(--light-color);
   border-radius: 5px;
-  content: '';
+  content: "";
   height: 5px;
   position: absolute;
   transition: all 0.3s;
@@ -300,7 +378,8 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: var(--mg-m);
 }
 
-.contact-icon, .nav-icon {
+.contact-icon,
+.nav-icon {
   margin-right: 10px;
 }
 
@@ -316,15 +395,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 .section-header {
- background-image: linear-gradient(120deg, #564991 30%, #31baff 100%);
- background-position: 0 calc(100% - 4px);
- background-repeat: no-repeat;
- background-size: 100% 0.15em;
- margin-bottom: 1em;
- text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(120deg, #564991 30%, #31baff 100%);
+  background-position: 0 calc(100% - 4px);
+  background-repeat: no-repeat;
+  background-size: 100% 0.15em;
+  margin-bottom: 1em;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
-.section-p, .section-date, article p {
+.section-p,
+.section-date,
+article p {
   margin-bottom: 1.5em;
 }
 
@@ -343,10 +424,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .large-nav-container {
-   display: flex;
-   justify-content: space-between;
-   align-items: flex-start;
-   height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 35px;
 }
 
 .large-nav-container a {
@@ -380,7 +461,7 @@ body::-webkit-scrollbar-thumb {
   .header-name {
     font-size: 3rem;
     margin-bottom: var(--mg-s);
-    margin-left: calc(0.625rem/2);
+    margin-left: calc(0.625rem / 2);
     letter-spacing: 1px;
   }
 }
@@ -391,5 +472,5 @@ body::-webkit-scrollbar-thumb {
   }
   .headshot {
     display: none;
-  } 
+  }
 }
