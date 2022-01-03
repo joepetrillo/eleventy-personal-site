@@ -1,6 +1,6 @@
 ---
 title: My Personal Website
-date: 2021-12-31
+date: 2021-12-30
 description: This website was a great way to practice my CSS skills and dive into using a static site generator for the first time. I post my blog posts and project updates here.
 ---
 

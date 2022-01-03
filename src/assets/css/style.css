@@ -193,6 +193,8 @@ code {
   padding: 0.4rem;
   background-color: var(--dark-accent-color);
   display: block;
+  font-size: 0.9rem;
+  overflow-x: auto;
 }
 
 /* =========== HEADER =========== */
