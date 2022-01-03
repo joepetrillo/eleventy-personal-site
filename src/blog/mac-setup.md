@@ -158,11 +158,11 @@ Install [Fig](https://fig.io)
 
 **Git Settings**
 
-- `git config --global user.name "Name Here"`
-- `git config --global user.email foo@gmail.com`
+`git config --global user.name "Name Here"`
+`git config --global user.email foo@gmail.com`
 
-- `git config --global init.defaultBranch main`
-- `git config --global core.editor "code -w"`
+`git config --global init.defaultBranch main`
+`git config --global core.editor "code -w"`
 
 ### Conclusion
 
