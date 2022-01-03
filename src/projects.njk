@@ -1,21 +1,22 @@
 ---
-title: 'Projects'
-layout: 'base.njk'
+title: "Projects"
+layout: "base.njk"
 ---
 
 <section>
-    <h2 class="section-header">Projects</h2>
+  <h2 class="section-header">Projects</h2>
 
-    {%- for project in collections.project | reverse -%}
-    <a href="{{ project.url }}">
-        <div class="article-card">
-            <div class="article-card__header">
-                <h5 class="article-card__title">{{ project.data.title }}</h5>
-                <p class="article-card__date lighter">{{ project.data.date | postDate }}</p>
-            </div>
-            <p class="article-card__desc lighter">{{ project.data.description }}</p>
-        </div>
-    </a>
-    {%- endfor %}
-
+  {%- for project in collections.project | reverse -%}
+  <a href="{{ project.url }}">
+    <div class="article-card">
+      <div class="article-card__header">
+        <h5 class="article-card__title">{{ project.data.title }}</h5>
+        <p class="article-card__date lighter">
+          {{ project.data.date | postDate }}
+        </p>
+      </div>
+      <p class="article-card__desc lighter">{{ project.data.description }}</p>
+    </div>
+  </a>
+  {%- endfor %}
 </section>

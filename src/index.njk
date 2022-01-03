@@ -1,85 +1,103 @@
 ---
-title: 'Joe Petrillo'
-layout: 'base.njk'
+title: "Joe Petrillo"
+layout: "base.njk"
 ---
 
 <section>
-    <h2 class="section-header">About</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sit ipsa officiis, recusandae molestias blanditiis dolores vero totam quisquam. Saepe aliquid magnam eum officia similique?</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ab illum alias quisquam nemo officiis exercitationem non delectus! Ut, voluptatem ad. Quae ratione asperiores repellendus porro repellat aliquid mollitia alias natus eius. Eos sequi esse odit modi porro?</p>
+  <h2 class="section-header">About</h2>
+  <p>
+    Hi! I'm Joe Petrillo. I am a junior at the University of Massachusetts
+    Amherst studying Computer Science. I have a passion for full stack
+    development as well as UI/UX design, and am constantly striving to learn
+    more.
+  </p>
+  <p>
+    I have always called Cape Cod Massachusetts my home. Outside of my studies I
+    enjoy playing golf, building computers and taking the occasional tropical
+    beach vacation. (Ever been to Aruba?)
+  </p>
+  <p>
+    Currently, I'm seeking a Summer 2022 Software Engineering Internship in the
+    Boston area. If you think I am a good fit, feel free to contact me at
+    <a href="mailto:jpetrillo119@gmail.com">jpetrillo119@gmail.com</a>.
+  </p>
 </section>
 
 <section>
-    <h2 class="section-header">Timeline</h2>
-    <div class="timeline-entry">
-        <h5 class="timeline-entry__title">UMass Amherst</h5>
-        <p class="timeline-entry__desc lighter">Undergraduate CS Student</p>
-        <p class="timeline-entry__dates lighter">2019 - Present</p>
-    </div>
-    <div class="timeline-entry">
-        <h5 class="timeline-entry__title">Pinehills Golf Club</h5>
-        <p class="timeline-entry__desc lighter">Outside Services</p>
-        <p class="timeline-entry__dates lighter">2018 - Present</p>
-    </div>
-    <div class="timeline-entry">
-        <h5 class="timeline-entry__title">Water Wizz</h5>
-        <p class="timeline-entry__desc lighter">Ride Attendant</p>
-        <p class="timeline-entry__dates lighter">2017 - 2018</p>
-    </div>
-    <div class="timeline-entry">
-        <h5 class="timeline-entry__title">Bourne High School</h5>
-        <p class="timeline-entry__desc lighter">High School Diploma</p>
-        <p class="timeline-entry__dates lighter">2015 - 2019</p>
-    </div>
-    <div class="timeline-entry">
-        <h5 class="timeline-entry__title">Born</h5>
-        <p class="timeline-entry__desc lighter">Cape Cod, MA</p>
-        <p class="timeline-entry__dates lighter">2001</p>
-    </div>
+  <h2 class="section-header">Timeline</h2>
+  <div class="timeline-entry">
+    <h5 class="timeline-entry__title">UMass Amherst</h5>
+    <p class="timeline-entry__desc lighter">Undergraduate CS Student</p>
+    <p class="timeline-entry__dates lighter">2019 - Present</p>
+  </div>
+  <div class="timeline-entry">
+    <h5 class="timeline-entry__title">Pinehills Golf Club</h5>
+    <p class="timeline-entry__desc lighter">Outside Services</p>
+    <p class="timeline-entry__dates lighter">2018 - Present</p>
+  </div>
+  <div class="timeline-entry">
+    <h5 class="timeline-entry__title">Water Wizz</h5>
+    <p class="timeline-entry__desc lighter">Ride Attendant</p>
+    <p class="timeline-entry__dates lighter">2017 - 2018</p>
+  </div>
+  <div class="timeline-entry">
+    <h5 class="timeline-entry__title">Bourne High School</h5>
+    <p class="timeline-entry__desc lighter">High School Diploma</p>
+    <p class="timeline-entry__dates lighter">2015 - 2019</p>
+  </div>
+  <div class="timeline-entry">
+    <h5 class="timeline-entry__title">Born</h5>
+    <p class="timeline-entry__desc lighter">Cape Cod, MA</p>
+    <p class="timeline-entry__dates lighter">2001</p>
+  </div>
 </section>
 
 <section>
-    <h2 class="section-header">Latest Posts</h2>
-    {%- for post in collections.post.slice(collections.post.length-2, collections.post.length) | reverse -%}
-    <a href="{{ post.url }}">
-        <div class="article-card">
-            <div class="article-card__header">
-                <h5 class="article-card__title">{{ post.data.title }}</h5>
-                <p class="article-card__date lighter">{{ post.data.date | postDate }}</p>
-            </div>
-            <p class="article-card__desc lighter">{{ post.data.description }}</p>
-        </div>
-    </a>
-    {%- endfor %}
+  <h2 class="section-header">Latest Posts</h2>
+  {%- for post in collections.post.slice(collections.post.length-2,
+  collections.post.length) | reverse -%}
+  <a href="{{ post.url }}">
+    <div class="article-card">
+      <div class="article-card__header">
+        <h5 class="article-card__title">{{ post.data.title }}</h5>
+        <p class="article-card__date lighter">
+          {{ post.data.date | postDate }}
+        </p>
+      </div>
+      <p class="article-card__desc lighter">{{ post.data.description }}</p>
+    </div>
+  </a>
+  {%- endfor %}
 
-    <a href="/blog/" class="article-card__viewall">View all blog posts</a>
+  <a href="/blog/" class="article-card__viewall">View all blog posts</a>
 </section>
 
 <section>
-    <h2 class="section-header">Latest Projects</h2>
-    {%- for project in collections.project.slice(collections.project.length-2, collections.project.length) | reverse -%}
-    <a href="{{ project.url }}">
-        <div class="article-card">
-            <div class="article-card__header">
-                <h5 class="article-card__title">{{ project.data.title }}</h5>
-                <p class="article-card__date lighter">{{ project.data.date | postDate }}</p>
-            </div>
-            <p class="article-card__desc lighter">{{ project.data.description }}</p>
-        </div>
-    </a>
-    {%- endfor %}
+  <h2 class="section-header">Latest Projects</h2>
+  {%- for project in collections.project.slice(collections.project.length-2,
+  collections.project.length) | reverse -%}
+  <a href="{{ project.url }}">
+    <div class="article-card">
+      <div class="article-card__header">
+        <h5 class="article-card__title">{{ project.data.title }}</h5>
+        <p class="article-card__date lighter">
+          {{ project.data.date | postDate }}
+        </p>
+      </div>
+      <p class="article-card__desc lighter">{{ project.data.description }}</p>
+    </div>
+  </a>
+  {%- endfor %}
 
-    <a href="/projects/" class="article-card__viewall">View all projects</a>
+  <a href="/projects/" class="article-card__viewall">View all projects</a>
 </section>
 
 <section>
-    <h2 class="section-header">Contact</h2>
-    <div class="contact-card">
-        <h5 class="contact-card__title"><i class="contact-card__icon fa fa-envelope"></i>Email</h5>
-        <p class="contact-card__desc">jpetrillo119@gmail.com</p>
-    </div>
-    <div class="contact-card">
-        <h5 class="contact-card__title"><i class="contact-card__icon fab fa-discord"></i>Discord</h5>
-        <p class="contact-card__desc">Perfect#5178</p>
-    </div>
+  <h2 class="section-header">Contact</h2>
+  <div class="contact-card">
+    <h5 class="contact-card__title">
+      <i class="contact-card__icon fa fa-envelope"></i>Email
+    </h5>
+    <p class="contact-card__desc">jpetrillo119@gmail.com</p>
+  </div>
 </section>
