@@ -54,6 +54,4 @@ Deployment was quick and easy thanks to [Netlify](https://www.netlify.com). I us
 
 ### Conclusion
 
-I had a blast developing my personal site. I love to see a design come to life and the satisfaction of a long organized stylesheet is a great feeling.
-
-I will be updating it here and there adding new styles and features as I see fit. Let me know if you have any suggestions!
+I had a blast developing my personal site. I love to see a design come to life and the satisfaction of a long organized stylesheet is a great feeling. I will be updating it here and there adding new styles and features as I see fit. Let me know if you have any suggestions!
