@@ -41,7 +41,7 @@ body {
 }
 
 /* body.is-active {
-    overflow: hidden;
+  overflow-y: hidden;
 } */
 
 main {
@@ -158,6 +158,7 @@ article img {
   margin: 0 auto;
   display: block;
   transition: transform 0.2s;
+  border-radius: 9px;
 }
 
 article img:hover {
