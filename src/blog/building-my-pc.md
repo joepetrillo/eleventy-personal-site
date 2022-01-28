@@ -8,7 +8,7 @@ My journey into computer science began back in 2014 when I decided to build my o
 
 ### Why?
 
-I played a lot of video games and watched a lot of YouTube in middle school. At the time, I had no idea that games even existed on PC and thought they were only on console. YouTube proved me wrong and exposed me to so many games that were not available to me.
+I played a lot of video games and watched a lot of YouTube in middle school. At the time, I had no idea that games even existed on PC and thought they were only on console. YouTube proved me wrong and exposed me to so many new games I had never heard of.
 
 The two channels I remember watching the most included FRANKIEonPC (formerly FRANKIEonPCin1080p when 1080p was a big deal) and SeaNanners. Frankie had a [series that started in 2012](https://www.youtube.com/watch?v=gPJ37khFJWI&list=PLuMTZBpxpB0cB3p3ewQT3KTdZ6szpBYSZ) where he played Arma 2: DayZ Mod. SeaNanners played a lot of [The Hidden](https://www.youtube.com/watch?v=FDQx-guzx2s) and [Garrys Mod](https://www.youtube.com/watch?v=637lBUlLSF0), all of which were not available on console.
 
