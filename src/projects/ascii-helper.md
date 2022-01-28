@@ -18,7 +18,7 @@ The CSS was fairly simple for this design but demonstrates further fundamental i
 
 ### The Code
 
-All of the javascript for this project is shown and explained below.
+All of the javascript for this project is shown below.
 
 ```js
 let symbol_input = document.querySelector("#symbol-input");
