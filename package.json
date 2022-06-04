@@ -11,7 +11,7 @@
   "author": "Joe Petrillo",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0",
-    "prettier": "^2.5.1"
+    "@11ty/eleventy": "^1.0.1",
+    "prettier": "^2.6.2"
   }
 }
