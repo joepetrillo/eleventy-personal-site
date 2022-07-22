@@ -1,6 +1,6 @@
 ---
-title: My Personal Website
-date: 2021-12-30
+title: Building My Personal Website
+date: "2021-12-30"
 description: This website was a great way to practice my CSS skills and dive into using a static site generator for the first time. I post my blog posts and project updates here.
 ---
 
@@ -10,9 +10,9 @@ My personal site (the site you are currently reading this on) was a great way fo
 
 The first step was creating a simple design in figma. I wanted something that was clean and easy on the eyes. Here are the early designs I came up with. You can see the similarities in the finished product, especially in the overall structure/layout.
 
-![Original design desktop](../../assets/img/Desktop.png)
+![Original design desktop](/public/img/Desktop.png)
 
-![Original design mobile](../../assets/img/Mobile.png)
+![Original design mobile](/public/img/Mobile.png)
 
 ### The SSG
 

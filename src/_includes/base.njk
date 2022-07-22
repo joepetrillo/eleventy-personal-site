@@ -4,41 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="I'm a student at UMass Amherst studying Computer Science who has a passion for full stack development and is constantly striving to learn more."
-    />
-    <script
-      src="https://kit.fontawesome.com/ffed67109b.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script src="https://kit.fontawesome.com/ffed67109b.js"></script>
+    <script src="/public/main.js" defer></script>
+    <link rel="stylesheet" href="/public/main.css" />
     <title>{{ title }}</title>
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://jpetrillo.com/" />
-    <meta property="og:title" content="Joe Petrillo" />
-    <meta
-      property="og:description"
-      content="I'm a student at UMass Amherst studying Computer Science who has a passion for full stack development and is constantly striving to learn more."
-    />
-    <meta
-      property="og:image"
-      content="https://cdn.discordapp.com/attachments/334513647529361408/901838149506957312/download-2.png"
-    />
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://jpetrillo.com/" />
-    <meta property="twitter:title" content="Joe Petrillo" />
-    <meta
-      property="twitter:description"
-      content="I'm a student at UMass Amherst studying Computer Science who has a passion for full stack development and is constantly striving to learn more."
-    />
-    <meta
-      property="twitter:image"
-      content="https://cdn.discordapp.com/attachments/334513647529361408/901838149506957312/download-2.png"
-    />
   </head>
 
   <body>
@@ -46,10 +15,8 @@
 
     <main>
       {{ content | safe }}
-
-      {% include "footer.njk" %}
     </main>
 
-    <script src="/assets/js/main.js"></script>
+    {% include "footer.njk" %}
   </body>
 </html>

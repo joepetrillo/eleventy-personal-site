@@ -1,17 +1,13 @@
 {
   "name": "eleventy-personal-site",
   "version": "1.0.0",
-  "description": "Personal website built with eleventy.",
+  "private": true,
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy",
-    "format": "prettier --write ."
+    "dev": "eleventy --serve",
+    "build": "eleventy"
   },
-  "keywords": [],
-  "author": "Joe Petrillo",
-  "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
-    "prettier": "^2.6.2"
+    "luxon": "^3.0.1"
   }
 }

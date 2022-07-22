@@ -1,7 +1,7 @@
 ---
-title: ASCII Helper
-date: 2021-10-24
-description: This project is filled with Javascript fundamentals, especially working with the DOM. This was one of my very first projects working with javascript.
+title: "How I Made ASCII Helper"
+date: "2021-10-24"
+description: "This project is filled with Javascript fundamentals, especially working with the DOM. This was one of my very first projects working with javascript."
 ---
 
 ASCII Helper is a simple javascript project I created to quickly find the ASCII value of some given character, inputted by the user. Additionally, a table with all the ASCII tables is given. I came up with the idea while learning about ASCII during my _Introduction to Systems_ class (CS230 at UMass Amherst).
@@ -14,7 +14,7 @@ I started this project with a design (like most projects). In figma I created a 
 
 The CSS was fairly simple for this design but demonstrates further fundamental ideas.
 
-![Original design desktop](../../assets/img/ascii-design.png)
+![Original design desktop](/public/img/ascii-design.png)
 
 ### The Code
 

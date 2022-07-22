@@ -1,6 +1,6 @@
 # My Personal Website
 
-My personal site built using [eleventy](https://www.11ty.dev) alongside plain old HTML, CSS and JS.
+My personal site built using [Eleventy](https://www.11ty.dev) and [TailwindCSS](https://tailwindcss.com)
 
 [Live Website](https://jpetrillo.com)
 

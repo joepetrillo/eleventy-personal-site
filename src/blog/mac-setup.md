@@ -1,6 +1,6 @@
 ---
 title: My Typical Mac Setup
-date: 2021-08-25
+date: "2021-08-25"
 description: I installed a fresh copy of macOS today. Why even bother doing this? In my case, I simply wanted to setup my Mac properly from the very beginning and learn some new things along the way.
 ---
 

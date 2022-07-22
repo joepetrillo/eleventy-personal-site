@@ -51,7 +51,7 @@ layout: "base.njk"
       <div class="article-card__header">
         <h5 class="article-card__title">{{ post.data.title }}</h5>
         <p class="article-card__date lighter">
-          {{ post.data.date | postDate }}
+          {{ post.data.date | date }}
         </p>
       </div>
       <p class="article-card__desc lighter">{{ post.data.description }}</p>
@@ -71,7 +71,7 @@ layout: "base.njk"
       <div class="article-card__header">
         <h5 class="article-card__title">{{ project.data.title }}</h5>
         <p class="article-card__date lighter">
-          {{ project.data.date | postDate }}
+          {{ project.data.date | date }}
         </p>
       </div>
       <p class="article-card__desc lighter">{{ project.data.description }}</p>
