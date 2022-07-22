@@ -4,7 +4,7 @@ layout: "base.njk"
 ---
 
 <section>
-  <h2 class="section-header">About</h2>
+  <h2>About</h2>
   <p>
     Hi! I'm Joe Petrillo. I am a junior at the University of Massachusetts
     Amherst studying Computer Science. I have a passion for full stack
@@ -19,75 +19,73 @@ layout: "base.njk"
 </section>
 
 <section>
-  <h2 class="section-header">Timeline</h2>
-  <div class="timeline-entry">
-    <h5 class="timeline-entry__title">Loom</h5>
-    <p class="timeline-entry__desc lighter">Software Engineer Intern</p>
-    <p class="timeline-entry__dates lighter">Internship Program Cancelled</p>
+  <h2>Timeline</h2>
+  <div>
+    <h5>Loom</h5>
+    <p>Software Engineer Intern</p>
+    <p>Internship Program Cancelled</p>
   </div>
-  <div class="timeline-entry">
-    <h5 class="timeline-entry__title">UMass Amherst</h5>
-    <p class="timeline-entry__desc lighter">Undergraduate CS Student</p>
-    <p class="timeline-entry__dates lighter">2019 - 2023</p>
+  <div>
+    <h5>UMass Amherst</h5>
+    <p>Undergraduate CS Student</p>
+    <p>2019 - 2023</p>
   </div>
-  <div class="timeline-entry">
-    <h5 class="timeline-entry__title">Pinehills Golf Club</h5>
-    <p class="timeline-entry__desc lighter">Outside Services</p>
-    <p class="timeline-entry__dates lighter">2018 - 2021</p>
+  <div>
+    <h5>Pinehills Golf Club</h5>
+    <p>Outside Services</p>
+    <p>2018 - 2021</p>
   </div>
-  <div class="timeline-entry">
-    <h5 class="timeline-entry__title">Born</h5>
-    <p class="timeline-entry__desc lighter">Cape Cod, MA</p>
-    <p class="timeline-entry__dates lighter">2001</p>
+  <div>
+    <h5>Born</h5>
+    <p>Cape Cod, MA</p>
+    <p>2001</p>
   </div>
 </section>
 
 <section>
-  <h2 class="section-header">Latest Posts</h2>
+  <h2>Latest Posts</h2>
   {%- for post in collections.post.slice(collections.post.length-2,
   collections.post.length) | reverse -%}
   <a href="{{ post.url }}">
-    <div class="article-card">
-      <div class="article-card__header">
-        <h5 class="article-card__title">{{ post.data.title }}</h5>
-        <p class="article-card__date lighter">
+    <div>
+      <div>
+        <h5>{{ post.data.title }}</h5>
+        <p>
           {{ post.data.date | date }}
         </p>
       </div>
-      <p class="article-card__desc lighter">{{ post.data.description }}</p>
+      <p>{{ post.data.description }}</p>
     </div>
   </a>
   {%- endfor %}
 
-  <a href="/blog/" class="article-card__viewall">View all blog posts</a>
+  <a href="/blog/">View all blog posts</a>
 </section>
 
 <section>
-  <h2 class="section-header">Latest Projects</h2>
+  <h2>Latest Projects</h2>
   {%- for project in collections.project.slice(collections.project.length-2,
   collections.project.length) | reverse -%}
   <a href="{{ project.url }}">
-    <div class="article-card">
-      <div class="article-card__header">
-        <h5 class="article-card__title">{{ project.data.title }}</h5>
-        <p class="article-card__date lighter">
+    <div>
+      <div>
+        <h5>{{ project.data.title }}</h5>
+        <p>
           {{ project.data.date | date }}
         </p>
       </div>
-      <p class="article-card__desc lighter">{{ project.data.description }}</p>
+      <p>{{ project.data.description }}</p>
     </div>
   </a>
   {%- endfor %}
 
-  <a href="/projects/" class="article-card__viewall">View all projects</a>
+  <a href="/projects/">View all projects</a>
 </section>
 
 <section>
-  <h2 class="section-header">Contact</h2>
-  <div class="contact-card">
-    <h5 class="contact-card__title">
-      <i class="contact-card__icon fa fa-envelope"></i>Email
-    </h5>
-    <p class="contact-card__desc">jpetrillo119@gmail.com</p>
+  <h2>Contact</h2>
+  <div>
+    <h5><i></i>Email</h5>
+    <p>jpetrillo119@gmail.com</p>
   </div>
 </section>

@@ -3,7 +3,7 @@ layout: "base.njk"
 ---
 
 <article>
-  <h2 class="section-header">{{ title }}</h2>
-  <p class="section-date">Posted {{ date | date }}</p>
-  {{ content | safe }}
+  <h2>{{ title }}</h2>
+  <p>Posted {{ date | date }}</p>
+  <div>{{ content | safe }}</div>
 </article>

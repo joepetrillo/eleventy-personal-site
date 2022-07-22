@@ -4,18 +4,18 @@ layout: "base.njk"
 ---
 
 <section>
-  <h2 class="section-header">Blog Posts</h2>
+  <h2>Blog Posts</h2>
 
   {%- for post in collections.post | reverse -%}
   <a href="{{ post.url }}">
-    <div class="article-card">
-      <div class="article-card__header">
-        <h5 class="article-card__title">{{ post.data.title }}</h5>
-        <p class="article-card__date lighter">
+    <div>
+      <div>
+        <h5>{{ post.data.title }}</h5>
+        <p>
           {{ post.data.date | date }}
         </p>
       </div>
-      <p class="article-card__desc lighter">{{ post.data.description }}</p>
+      <p>{{ post.data.description }}</p>
     </div>
   </a>
   {%- endfor %}
