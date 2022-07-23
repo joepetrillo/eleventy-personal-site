@@ -1,43 +1,35 @@
 ---
-title: Building My Computer
+title: "A Complete Guide to React Router: Everything You Need to Know"
 date: "2022-01-10"
-description: I taught myself how to build a computer from start to finish. In this post I cover why I wanted to do this, how my 8th grade self was able to learn everything with zero prior knowledge and how I still upgrade it to this day.
+description: "I taught myself how to build a computer from start to finish. In this post I cover why I wanted to do this, how my 8th grade self was able to learn everything with zero prior knowledge and how I still upgrade it to this day."
 ---
 
-My journey into computer science began back in 2014 when I decided to build my own computer. I had no idea the difficulty or how much money it would cost compared to a Playstation or Xbox but I was determined to learn.
+My journey into computer science began back in 2014 when I decided to build my own computer. I had no idea the difficulty or how much money it would cost compared to a Playstation or Xbox, but I was determined to learn.
 
-### Why?
+## Why?
 
-I played a lot of video games and watched a lot of YouTube in middle school. At the time, I had no idea that games even existed on PC and thought they were only on console. YouTube proved me wrong and exposed me to so many new games I had never heard of.
+Like any other kid, I played video games and watched a bunch of YouTube in middle school. At the time, I had no idea that games existed on computers and figured they were only on consoles. However, YouTube exposed me to what initially felt like a neverending list of games I had never even heard of.
 
-The two channels I remember watching the most included FRANKIEonPC (formerly FRANKIEonPCin1080p when 1080p was a big deal) and SeaNanners. Frankie had a [series that started in 2012](https://www.youtube.com/watch?v=gPJ37khFJWI&list=PLuMTZBpxpB0cB3p3ewQT3KTdZ6szpBYSZ) where he played Arma 2: DayZ Mod. SeaNanners played a lot of [The Hidden](https://www.youtube.com/watch?v=FDQx-guzx2s) and [Garrys Mod](https://www.youtube.com/watch?v=637lBUlLSF0), all of which were not available on console.
+The two channels I remember watching the most included FRANKIEonPC and SeaNanners. Frankie had a [series that started in 2012](https://www.youtube.com/watch?v=gPJ37khFJWI&list=PLuMTZBpxpB0cB3p3ewQT3KTdZ6szpBYSZ) where he played Arma 2: DayZ Mod. SeaNanners played a lot of [The Hidden](https://www.youtube.com/watch?v=FDQx-guzx2s) and [Garrys Mod](https://www.youtube.com/watch?v=637lBUlLSF0). None of these were available on consoles.
 
-I wanted to play these games and tried downloading them (which I did not know how to do at first) on my old Acer notebook. This obviously did not work and it could barely open the games. This prompted me to start researching how computers worked and how to assemble one myself.
+I wanted to play these games, so I tried downloading them on my ancient Acer notebook, which didn't work out. So, I started researching how computers worked and how to assemble one myself.
 
-### Learning
+## Learning
 
 I began learning how computers worked using YouTube. Notable channels I remember watching A LOT included [Carey Holzman](https://www.youtube.com/watch?v=_AUfeZf0X7w) and [Austin Evans](https://www.youtube.com/watch?v=NSNz6VVpWI8). These guys have some great videos covering the basics of building computers and following best practices.
 
 After many hours of videos I started to feel confident I could do it myself. I now needed to choose my parts and not make it too expensive.
 
-### Choosing Parts
+## Choosing Parts
 
-To choose parts, the best resource still to this day is [PCPartPicker](https://pcpartpicker.com). I used this for my very first build and just again recently to plan out a build I did for my brother. It finds the best prices and ensures it will only show you parts that are compatable with everything else. For example, if you choose an Intel CPU, it will only show you motherboards that are made for that specific processor. This is incredibly helpful, especially for a beginner.
-
-The parts I chose were nothing crazy. Here were the specs...
+To choose parts, the best resource still to this day is [PCPartPicker](https://pcpartpicker.com). I used this for my very first build and just again recently to plan out a build I did for my brother. It finds the best prices and ensures it will only show you parts that are compatable with everything else. For example, if you choose an Intel CPU, it will only show you motherboards that are made for that specific processor. This is incredibly helpful, especially for a beginner. I planned to save as much as possible and ask for parts on Christmas and my birthday. Here is a list of parts I ended up starting with.
 
 - i5 4690k
 - 8GB DDR3 Ram
 - Geforce GTX 970
 - 1TB HDD Storage
 
-My plan was to save up as much as I could. I also asked for parts during Christmas and my birthday. Here are some **old photos** from Christmas morning 2014, when I got my hands on my first few pieces.
-
-![xmas-case](/public/img/xmas-case.jpeg)
-
-![xmas-psu](/public/img/xmas-psu.jpeg)
-
-### The Build
+## The Build
 
 Once I had all my parts I could finally start the build. Because this process was foreign to my parents and everyone else in my family, I was completely on my own. First, I assembled the motherboard and added the CPU and RAM. I then put the power supply, motherboard and hard drive into the case. Once everything else was done, I attached the graphics card and began wiring.
 
@@ -49,7 +41,7 @@ All that was left to do was see if it booted and then install Windows. My first 
 
 I was finally able to play the games I wanted and felt accomplished. Little did I know, this would lead to me becoming interested in computer science. Although seperate from the hardware side of things, I may have never thought about programming if it was not for learning this new skill.
 
-### Conclusion
+## Conclusion
 
 Over the years, I have upgraded my computer many times in small increments.
 

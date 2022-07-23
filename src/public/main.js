@@ -1,7 +1,23 @@
-const burger = document.querySelector(".nav-btn");
-const nav_bg = document.querySelector(".nav-wrapper");
+const animation = gsap.timeline({
+  paused: "true",
+});
 
-burger.addEventListener("click", () => {
-  burger.classList.toggle("is-active");
-  nav_bg.classList.toggle("is-active");
+animation.to("header nav", {
+  duration: 0.5,
+  x: "0%",
+  ease: Expo.easeInOut,
+});
+
+animation.fromTo(
+  "header nav a",
+  { x: "-100%", opacity: 0 },
+  { duration: 0.4, opacity: 1, x: "0%", stagger: 0.05 }
+);
+
+document.getElementById("open-btn").addEventListener("click", () => {
+  animation.play();
+});
+
+document.getElementById("close-btn").addEventListener("click", () => {
+  animation.reverse();
 });

@@ -1,28 +1,81 @@
-<header>
-  <img
-    src="https://cdn.discordapp.com/attachments/334513647529361408/901838149506957312/download-2.png"
-    alt="headshot"
-  />
+<header
+  class="mx-auto mt-10 mb-20 flex max-w-5xl items-center justify-between font-fragment-glare text-xl font-extrabold"
+>
+  <!-- Picture and Name -->
+  <a href="/" class="flex items-center gap-3">
+    <img
+      src="https://cdn.discordapp.com/attachments/334513647529361408/901838149506957312/download-2.png"
+      alt="headshot"
+      class="max-w-[3.5rem] rounded-full"
+    /><span>Joe Petrillo</span></a
+  >
 
-  <div>
-    <a href="/"><h1>JOE PETRILLO</h1></a>
+  <!-- Open Menu Button -->
+  <button id="open-btn" class="md:hidden">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-12 w-12"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      stroke-width="2"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M4 6h16M4 12h16m-7 6h7"
+      />
+    </svg>
+  </button>
 
-    <div>
-      <nav>
-        <a target="_blank" href="https://github.com/joepetrillo"
-          ><i></i>GitHub</a
-        >
-        <a target="_blank" href="https://linkedin.com/in/jpetrillo19"
-          ><i></i>LinkedIn</a
-        >
-        <a href="/blog/"><i></i>Blog</a>
-        <a href="/projects/"><i></i>Projects</a>
-        <a target="_blank" href="/public/resume.pdf"><i></i>Resume</a>
-      </nav>
+  <!-- Mobile Nav Menu -->
+  <nav
+    class="fixed top-0 left-0 h-full w-full -translate-x-full bg-black md:static md:h-auto md:w-auto md:!translate-x-0 md:bg-transparent"
+  >
+    <!-- Close Menu Button -->
+    <button id="close-btn" class="absolute top-11 right-6 md:hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-12 w-12"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+    </button>
+
+    <!-- Nav Links -->
+    <div
+      class="flex h-full flex-col items-center justify-center gap-8 text-4xl underline md:h-auto md:flex-row md:gap-3 md:text-xl lg:gap-8"
+    >
+      <a
+        class="py-2 md:!translate-x-0 md:!opacity-100"
+        target="_blank"
+        href="https://github.com/joepetrillo"
+        >GitHub</a
+      >
+      <a
+        class="py-2 md:!translate-x-0 md:!opacity-100"
+        target="_blank"
+        href="https://linkedin.com/in/jpetrillo19"
+        >LinkedIn</a
+      >
+      <a class="py-2 md:!translate-x-0 md:!opacity-100" href="/blog">Blog</a>
+      <a class="py-2 md:!translate-x-0 md:!opacity-100" href="/projects"
+        >Projects</a
+      >
+      <a
+        class="py-2 md:!translate-x-0 md:!opacity-100"
+        target="_blank"
+        href="/public/resume.pdf"
+        >Resume</a
+      >
     </div>
-  </div>
-
-  <div>
-    <div></div>
-  </div>
+  </nav>
 </header>

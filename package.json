@@ -4,12 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "eleventy --serve & tailwindcss -i ./src/public/main.css -o ./_site/public/main.css --watch",
-    "build": "eleventy"
+    "build": "eleventy && tailwindcss -i ./src/public/main.css -o ./_site/public/main.css "
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
     "@tailwindcss/typography": "^0.5.4",
+    "eleventy-plugin-time-to-read": "^1.2.0",
     "luxon": "^3.0.1",
+    "prettier-plugin-tailwindcss": "^0.1.12",
     "tailwindcss": "^3.1.6"
   }
 }
