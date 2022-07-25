@@ -1,6 +1,6 @@
 # My Personal Website
 
-My personal site built using [Eleventy](https://www.11ty.dev) and [TailwindCSS](https://tailwindcss.com)
+My personal site built using [Eleventy](https://www.11ty.dev), [TailwindCSS](https://tailwindcss.com) and [GSAP](https://greensock.com/gsap/)
 
 [Live Website](https://jpetrillo.com)
 
