@@ -1,7 +1,7 @@
 ---
-title: My Typical Mac Setup
+title: "My Typical Mac Setup"
 date: "2021-08-25"
-description: I installed a fresh copy of macOS today. Why even bother doing this? In my case, I simply wanted to setup my Mac properly from the very beginning and learn some new things along the way.
+description: "I installed a fresh copy of macOS today and went through my typical setup process. This article goes over all the software, settings and configuration I do as a developer."
 ---
 
 I installed a fresh copy of macOS Big Sur today on my MacBook Pro. Why even bother doing this? In my case, I simply wanted to setup my Mac properly from the very beginning and learn some new things along the way.

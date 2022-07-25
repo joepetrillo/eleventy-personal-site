@@ -3,20 +3,28 @@ title: "Blog"
 layout: "base.njk"
 ---
 
-<section>
-  <h2>Blog Posts</h2>
-
+<h1
+  class="mx-auto mb-20 max-w-5xl text-center font-fragment-glare text-3xl font-extrabold leading-[40px] underline sm:text-4xl sm:leading-[50px] md:text-5xl md:leading-[65px] lg:text-6xl lg:leading-[80px]"
+>
+  Blog
+</h1>
+<div class="mx-auto grid max-w-5xl gap-6 md:grid-cols-2 lg:gap-10">
   {%- for post in collections.post | reverse -%}
-  <a href="{{ post.url }}">
-    <div>
-      <div>
-        <h5>{{ post.data.title }}</h5>
-        <p>
-          {{ post.data.date | date }}
-        </p>
-      </div>
-      <p>{{ post.data.description }}</p>
+  <a
+    class="rounded-2xl border-x-2 border-y-4 border-stone-800 py-8 px-5 transition-[background-color] duration-150 ease-out hover:bg-stone-800 md:px-8 md:py-9"
+    href="{{ post.url }}"
+  >
+    <div class="mb-4">
+      <h3 class="mb-4 font-fragment-glare text-xl font-extrabold underline">
+        {{ post.data.title }}
+      </h3>
+      <p class="text-stone-300">
+        {{ post.data.date | date }}
+      </p>
     </div>
+    <p class="leading-7 text-stone-300">
+      {{ post.data.description }}
+    </p>
   </a>
   {%- endfor %}
-</section>
+</div>

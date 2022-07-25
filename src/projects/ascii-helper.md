@@ -1,7 +1,7 @@
 ---
 title: "How I Made ASCII Helper"
 date: "2021-10-24"
-description: "This project is filled with Javascript fundamentals, especially working with the DOM. This was one of my very first projects working with javascript."
+description: "Ever had to lookup an ASCII value by hand? This simple project makes that process much easier and is filled with DOM fundamentals."
 ---
 
 ASCII Helper is a simple javascript project I created to quickly find the ASCII value of some given character, inputted by the user. Additionally, a table with all the ASCII tables is given. I came up with the idea while learning about ASCII during my _Introduction to Systems_ class (CS230 at UMass Amherst).

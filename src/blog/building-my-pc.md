@@ -1,7 +1,7 @@
 ---
-title: "A Complete Guide to React Router: Everything You Need to Know"
+title: "Building My Computer"
 date: "2022-01-10"
-description: "I taught myself how to build a computer from start to finish. In this post I cover why I wanted to do this, how my 8th grade self was able to learn everything with zero prior knowledge and how I still upgrade it to this day."
+description: "I taught myself how to build a computer from scratch in 8th grade. In this post I cover why I wanted to do this, the learning process and how I still upgrade it today."
 ---
 
 My journey into computer science began back in 2014 when I decided to build my own computer. I had no idea the difficulty or how much money it would cost compared to a Playstation or Xbox, but I was determined to learn.

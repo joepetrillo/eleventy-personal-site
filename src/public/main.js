@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 const openMenu = gsap.timeline({
   paused: "true",
 });
@@ -10,7 +12,7 @@ openMenu.to("header nav", {
 
 openMenu.from(
   "header nav a",
-  { x: "-200%", opacity: 0, duration: 0.4, stagger: 0.08 },
+  { y: "200%", opacity: 0, duration: 0.4, stagger: 0.08 },
   "<0.2"
 );
 
@@ -26,10 +28,28 @@ document.getElementById("close-btn").addEventListener("click", () => {
   });
 });
 
-if (document.querySelector("article")) {
-  gsap.from("article", {
-    duration: 0.9,
-    y: "50px",
-    opacity: 0,
-  });
-}
+// if (document.querySelector("article")) {
+//   gsap.from("article", {
+//     duration: 0.9,
+//     y: "50px",
+//     opacity: 0,
+//   });
+// }
+
+gsap.from("main", {
+  duration: 0.8,
+  y: "50px",
+  opacity: 0,
+});
+
+gsap.from("footer", {
+  duration: 0.8,
+  y: "-50px",
+  opacity: 0,
+  delay: 0.2,
+  scrollTrigger: {
+    trigger: "footer",
+    start: "50px bottom",
+    toggleActions: "play none none none",
+  },
+});
