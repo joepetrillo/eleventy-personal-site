@@ -1,23 +1,35 @@
-const animation = gsap.timeline({
+const openMenu = gsap.timeline({
   paused: "true",
 });
 
-animation.to("header nav", {
-  duration: 0.5,
+openMenu.to("header nav", {
+  duration: 0.7,
   x: "0%",
   ease: Expo.easeInOut,
 });
 
-animation.fromTo(
+openMenu.from(
   "header nav a",
-  { x: "-100%", opacity: 0 },
-  { duration: 0.4, opacity: 1, x: "0%", stagger: 0.05 }
+  { x: "-200%", opacity: 0, duration: 0.4, stagger: 0.08 },
+  "<0.2"
 );
 
 document.getElementById("open-btn").addEventListener("click", () => {
-  animation.play();
+  openMenu.play(0);
 });
 
 document.getElementById("close-btn").addEventListener("click", () => {
-  animation.reverse();
+  gsap.to("header nav", {
+    duration: 0.7,
+    x: "-100%",
+    ease: Expo.easeInOut,
+  });
 });
+
+if (document.querySelector("article")) {
+  gsap.from("article", {
+    duration: 0.9,
+    y: "50px",
+    opacity: 0,
+  });
+}
