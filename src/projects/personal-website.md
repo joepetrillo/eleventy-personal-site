@@ -18,7 +18,7 @@ The first step was creating a simple design in figma. I wanted something that wa
 
 Next, I had to decide what static site generator I wanted to use. When I was searching I came across several popular choices such as Jekyll, Hugo, Gatsby, Hexo and Eleventy. [This website](https://jamstack.org/generators/) is a great resource for a master list.
 
-In the end I decided on using Eleventy. Since I was not using React or any other libraries/frameworks, I needed something that was good for simple "vanilla" sites. Eleventy markets itself as a "simpler static site generator" and as a "JavaScript alternative to Jekyll." This is a perfect option for a site like this one and for me since I am not familiar with Ruby (Jekyll uses it).
+In the end I decided on using Eleventy. Since I was not using React or any other libraries/frameworks, I needed something that was good for simple sites. Eleventy markets itself as a “simpler static site generator” and as a “JavaScript alternative to Jekyll.” This is a perfect option for a site like this one and for me since I am not familiar with Ruby (Jekyll uses it).
 
 Eleventy supports many different templating languages like Liquid and Nunjucks. I decided to get familiar with the basics of Nunjucks and found it very easy to work with.
 
@@ -45,7 +45,7 @@ I used a lot of flexbox and followed best typography scaling practices. I still 
 
 The Javascript used for this website is very minimal. I only used it for the mobile navigation hamburger button and the date on the footer.
 
-1. For the hamburger I simply used a "click" event listener which would toggle classes on particular items to change the styling.
+1. For the hamburger I simply used a “click” event listener which would toggle classes on particular items to change the styling.
 2. For the date in the footer I simply used Date().getFullYear() so it would always be the proper year.
 
 ## Deployment

@@ -8,9 +8,7 @@ I installed a fresh copy of macOS Big Sur today on my MacBook Pro. Why even both
 
 After I learned how to build my own PC in middle school I have reinstalled windows many many times. I got very familiar with it and knew exactly how I liked to configure things. However, I got my first Mac in 2019 when I graduated high school and haven't bothered doing this, until now.
 
-Since it was my first time on macOS, I suspect I made some mistakes that would not be considered "common practice". For example, I had no idea homebrew existed...
-
-I don't think I will ever automate this process. I prefer making small changes and reminding myself of everything I do each time I start fresh.
+Since it was my first time on macOS, I suspect I made some mistakes that would not be considered common practice. I don't think I will ever automate this process. I prefer making small changes and reminding myself of everything I do each time I start fresh.
 
 ## System Preferences
 
@@ -27,8 +25,8 @@ Not much is changed. If not specified, I leave it default.
 **General**
 
 - Dark appearance
-- Turn "ask to keep changes when closing documents" on
-- Set recent items to "none"
+- Turn “ask to keep changes when closing documents” on
+- Set recent items to “none”
 - Disable handoff between devices
 
 **Dock**
@@ -36,7 +34,7 @@ Not much is changed. If not specified, I leave it default.
 - Remove everything from dock except:
   - Finder, Safari, Mail, Calendar, Music, System Preferences, Discord, iTerm2, Downloads, Trash
 - Keep dock size relatively small
-- Minimize windows using the "Scale effect"
+- Minimize windows using the “Scale effect”
 - Disable showing recent applications in dock
 - Enable dock auto hiding
 - Show indicators for open apps
@@ -83,7 +81,7 @@ Tip - Move icons around by holding CMD while dragging
 **General**
 
 - Uncheck all items to show on desktop
-- Set "New Finder windows show" to home folder
+- Set “New Finder windows show” to home folder
 - Enable show all filename extensions
 - Set all folders to use the list viewing mode
 
@@ -91,7 +89,7 @@ Tip - Move icons around by holding CMD while dragging
 
 - Uncheck everything except:
   - Applications, Desktop, Documents, Downloads, Home Folder, iCloud Drive
-- Create a "Projects" folder and add to sidebar
+- Create a “Projects” folder and add to sidebar
 
 ![My Finder setup](https://i.imgur.com/VGNCSeN.png)
 
