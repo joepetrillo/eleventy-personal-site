@@ -1,8 +1,11 @@
 const { DateTime } = require("luxon");
 const timeToRead = require("eleventy-plugin-time-to-read");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/public");
+
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.addPlugin(timeToRead, {
     speed: "180 words per minute",
@@ -14,7 +17,7 @@ module.exports = function (eleventyConfig) {
     seconds: false,
     digits: 1,
     output: function (data) {
-      return data.timing;
+      return `${Math.max(1, Math.round(data.totalSeconds / 60))} minute`;
     },
   });
 

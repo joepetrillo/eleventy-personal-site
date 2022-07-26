@@ -11,11 +11,11 @@ layout: "base.njk"
     </h1>
     <div class="mt-10 flex flex-col items-center gap-3 text-stone-300">
       <span>Posted {{ date | date }}</span>
-      <span>{{ content | timeToRead }} to read</span>
+      <span>{{ content | timeToRead }} read</span>
     </div>
   </div>
   <div
-    class="prose prose-lg !prose-invert prose-stone mx-auto prose-headings:font-fragment-glare prose-a:text-rose-300 prose-img:mx-auto prose-img:max-h-96 prose-img:rounded-2xl"
+    class="prose prose-lg !prose-invert prose-stone mx-auto prose-headings:font-fragment-glare prose-img:mx-auto prose-img:max-h-96 prose-img:rounded-2xl"
   >
     {{ content | safe }}
   </div>

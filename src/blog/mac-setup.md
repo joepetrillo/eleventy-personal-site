@@ -99,41 +99,40 @@ Tip - Move icons around by holding CMD while dragging
 
 Start this process by installing homebrew
 
-Install [iTerm2](https://iterm2.com)
-
+Install [iTerm2](https://iterm2.com) -
 `brew install --cask iterm2`
 
-Install [Discord](https://discord.com)
+Install [Discord](https://discord.com) -
 `brew install --cask discord`
 
-Install [VS Code](https://code.visualstudio.com)
+Install [VS Code](https://code.visualstudio.com) -
 `brew install --cask visual-studio-code`
 
-Install [Brave](https://brave.com)
+Install [Brave](https://brave.com) -
 `brew install --cask brave-browser`
 
-Install [Git](https://git-scm.com)
+Install [Git](https://git-scm.com) -
 `brew install git`
 
-Install [Node](https://nodejs.org/en/)
+Install [Node](https://nodejs.org/en/) -
 `brew install node`
 
-Install [Neofetch](https://github.com/dylanaraps/neofetch)
+Install [Neofetch](https://github.com/dylanaraps/neofetch) -
 `brew install neofetch`
 
-Install [Xcode](https://developer.apple.com/xcode/)
+Install [Xcode](https://developer.apple.com/xcode/) -
 `On the App Store`
 
-Install [Magnet](https://magnet.crowdcafe.com)
+Install [Magnet](https://magnet.crowdcafe.com) -
 `On the App Store`
 
-Install [Affinity Designer](https://affinity.serif.com/en-us/designer/)
+Install [Affinity Designer](https://affinity.serif.com/en-us/designer/) -
 `On the App Store`
 
-Install [Affinity Photo](https://affinity.serif.com/en-us/photo/)
+Install [Affinity Photo](https://affinity.serif.com/en-us/photo/) -
 `On the App Store`
 
-Install [Fig](https://fig.io)
+Install [Fig](https://fig.io) -
 `Early Access on Website`
 
 ## Configuration
@@ -158,11 +157,13 @@ Install [Fig](https://fig.io)
 
 **Git Settings**
 
-`git config --global user.name "Name Here"`
-`git config --global user.email foo@gmail.com`
+```shell
+git config --global user.name "Name Here"
+git config --global user.email foo@gmail.com
 
-`git config --global init.defaultBranch main`
-`git config --global core.editor "code -w"`
+git config --global init.defaultBranch main
+git config --global core.editor "code -w"
+```
 
 ## Conclusion
 
