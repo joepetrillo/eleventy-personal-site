@@ -1,10 +1,10 @@
 ---
-title: "Building My First Personal Website"
+title: "My Personal Website"
 date: "2021-12-30"
 description: "This was a great way to practice my CSS skills and dive into using a static site generator for the first time. I post my blog posts, project updates and anything else I want here. I think everyone should have one."
 ---
 
-My personal site (the site you are currently reading this on) was a great way for me to practice my basic HTML/CSS/Javascript fundamentals. I used a static site generator for the first time and found it made the project much easier.
+My older personal site (not the site you are currently reading this on) was a great way for me to practice my basic HTML, CSS, and Javascript fundamentals. I used a static site generator for the first time and found it made the project much easier.
 
 ## The Design
 

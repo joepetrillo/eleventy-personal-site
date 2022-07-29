@@ -3,81 +3,84 @@ title: "Joe Petrillo"
 layout: "base.njk"
 ---
 
-<section>
-  <h2>About</h2>
-  <p>
-    Hi! I'm Joe Petrillo. I am a junior at the University of Massachusetts
-    Amherst studying Computer Science. I have a passion for full stack
-    development as well as UI/UX design, and am constantly striving to learn
-    more.
-  </p>
-  <p>
-    I have always called Cape Cod Massachusetts my home. Outside of my studies I
-    enjoy playing golf, building computers and taking the occasional tropical
-    beach vacation. (Ever been to Aruba?)
-  </p>
-</section>
+<div class="mx-auto max-w-5xl text-lg">
+  <section class="mb-20 flex flex-col gap-10 lg:flex-row lg:gap-20">
+    <h1
+      class="max-w-max shrink-0 bg-gradient-to-r from-[#fff3a2] to-[#ff6764] bg-clip-text font-fragment-glare text-4xl font-extrabold leading-[50px] text-transparent sm:text-6xl sm:leading-[80px]"
+    >
+      Hey, I'm Joe.
+      <span class="block">A Developer.</span>
+    </h1>
+    <p class="leading-[32px] text-stone-300">
+      I'm a senior at the University of Massachusetts Amherst studying computer
+      science, graduating in the summer of 2023. I have a strong interest in
+      full stack development and the JavaScript ecosystem. I am currently
+      seeking a position as a new grad software engineer.
+    </p>
+  </section>
 
-<section>
-  <h2>Timeline</h2>
-  <div>
-    <h5>Loom</h5>
-    <p>Software Engineer Intern</p>
-    <p>Internship Program Cancelled</p>
-  </div>
-  <div>
-    <h5>UMass Amherst</h5>
-    <p>Undergraduate CS Student</p>
-    <p>2019 - 2023</p>
-  </div>
-  <div>
-    <h5>Pinehills Golf Club</h5>
-    <p>Outside Services</p>
-    <p>2018 - 2021</p>
-  </div>
-  <div>
-    <h5>Born</h5>
-    <p>Cape Cod, MA</p>
-    <p>2001</p>
-  </div>
-</section>
-
-<section>
-  <h2>Latest Posts</h2>
-  {%- for post in collections.post.slice(collections.post.length-2,
-  collections.post.length) | reverse -%}
-  <a href="{{ post.url }}">
-    <div>
+  <section>
+    <h2 class="font-fragment-glare text-3xl font-extrabold">Timeline</h2>
+    <div class="leading-[32px] text-stone-300">
       <div>
-        <h5>{{ post.data.title }}</h5>
-        <p>
-          {{ post.data.date | date }}
-        </p>
+        <h5>Loom</h5>
+        <p>Software Engineer Intern</p>
+        <p>Internship Program Cancelled</p>
       </div>
-      <p>{{ post.data.description }}</p>
-    </div>
-  </a>
-  {%- endfor %}
-
-  <a href="/blog/">View all blog posts</a>
-</section>
-
-<section>
-  <h2>Latest Projects</h2>
-  {%- for project in collections.project.slice(collections.project.length-2,
-  collections.project.length) | reverse -%}
-  <a href="{{ project.url }}">
-    <div>
       <div>
-        <h5>{{ project.data.title }}</h5>
-        <p>
-          {{ project.data.date | date }}
-        </p>
+        <h5>UMass Amherst</h5>
+        <p>Undergraduate CS Student</p>
+        <p>2019 - 2023</p>
       </div>
-      <p>{{ project.data.description }}</p>
+      <div>
+        <h5>Pinehills Golf Club</h5>
+        <p>Outside Services</p>
+        <p>2018 - 2021</p>
+      </div>
+      <div>
+        <h5>Born</h5>
+        <p>Cape Cod, MA</p>
+        <p>2001</p>
+      </div>
     </div>
-  </a>
-  {%- endfor %}
+  </section>
 
-  <a href="/projects/">View all projects</a>
-</section>
+  <!-- <section>
+    <h2 class="font-fragment-glare text-3xl font-extrabold">Latest Posts</h2>
+    {%- for post in collections.post.slice(collections.post.length-2,
+    collections.post.length) | reverse -%}
+    <a href="{{ post.url }}">
+      <div>
+        <div>
+          <h5>{{ post.data.title }}</h5>
+          <p>
+            {{ post.data.date | date }}
+          </p>
+        </div>
+        <p>{{ post.data.description }}</p>
+      </div>
+    </a>
+    {%- endfor %}
+
+    <a href="/blog/">View all blog posts</a>
+  </section>
+
+  <section>
+    <h2 class="font-fragment-glare text-3xl font-extrabold">Latest Projects</h2>
+    {%- for project in collections.project.slice(collections.project.length-2,
+    collections.project.length) | reverse -%}
+    <a href="{{ project.url }}">
+      <div>
+        <div>
+          <h5>{{ project.data.title }}</h5>
+          <p>
+            {{ project.data.date | date }}
+          </p>
+        </div>
+        <p>{{ project.data.description }}</p>
+      </div>
+    </a>
+    {%- endfor %}
+    <a href="/projects/">View all projects</a>
+  </section> -->
+</div>

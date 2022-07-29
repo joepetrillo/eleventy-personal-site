@@ -1,5 +1,5 @@
 ---
-title: "How I Made ASCII Helper"
+title: "ASCII Helper"
 date: "2021-10-24"
 description: "Ever had to lookup an ASCII value by hand? This simple project makes that process much easier and is filled with DOM fundamentals."
 ---
