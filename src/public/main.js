@@ -52,7 +52,11 @@ if (document.getElementById("rotate")) {
     name: "swapText",
     effect: (targets, config) => {
       const tl = gsap.timeline({ delay: config.delay });
-      tl.to(targets, { y: "-30%", autoAlpha: 0, duration: config.duration });
+      tl.to(targets, {
+        y: "-20%",
+        autoAlpha: 0,
+        duration: config.duration / 1.2,
+      });
       tl.add(() => (targets[0].innerText = config.text));
       tl.to(targets, { y: "30%", duration: 0 });
       tl.to(targets, { y: "0%", autoAlpha: 1, duration: config.duration });
@@ -65,5 +69,8 @@ if (document.getElementById("rotate")) {
   const tl = gsap.timeline({ repeat: -1, delay: 0 });
   tl.swapText("#rotate", { text: "Student.", delay: 1.8 })
     .swapText("#rotate", { text: "Golfer.", delay: 1.8 })
+    .swapText("#rotate", { text: "Builder.", delay: 1.8 })
+    .swapText("#rotate", { text: "Movie Buff.", delay: 1.8 })
+    .swapText("#rotate", { text: "Designer.", delay: 1.8 })
     .swapText("#rotate", { text: "Developer.", delay: 1.8 }); // back to the start
 }
