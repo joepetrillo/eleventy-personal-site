@@ -1,12 +1,11 @@
 const { DateTime } = require("luxon");
-const timeToRead = require("eleventy-plugin-time-to-read");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const timeToRead = require("eleventy-plugin-time-to-read");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/public");
 
   eleventyConfig.addPlugin(syntaxHighlight);
-
   eleventyConfig.addPlugin(timeToRead, {
     speed: "180 words per minute",
     language: "en",
@@ -31,6 +30,7 @@ module.exports = function (eleventyConfig) {
       dataTemplateEngine: "njk",
       htmlTemplateEngine: "njk",
       input: "src",
+      output: "tmp",
     },
   };
 };

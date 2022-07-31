@@ -14,7 +14,7 @@ I started this project with a design (like most projects). In figma I created a 
 
 The CSS was fairly simple for this design but demonstrates further fundamental ideas.
 
-![Original design desktop](/public/img/ascii-design.png)
+![Original design desktop](/tmp/public/img/ascii-design.png)
 
 ## The Code
 

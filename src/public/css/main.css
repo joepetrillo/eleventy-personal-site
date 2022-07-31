@@ -6,37 +6,39 @@
   @font-face {
     font-family: "fragment-glare";
     font-weight: 300;
-    src: url("/public/fonts/PPFragment-GlareLight.otf") format("opentype");
+    src: url("/tmp/public/fonts/PPFragment-GlareLight.otf") format("opentype");
   }
   @font-face {
     font-family: "fragment-glare";
     font-weight: 400;
-    src: url("/public/fonts/PPFragment-GlareRegular.otf") format("opentype");
+    src: url("/tmp/public/fonts/PPFragment-GlareRegular.otf") format("opentype");
   }
   @font-face {
     font-family: "fragment-glare";
     font-weight: 800;
-    src: url("/public/fonts/PPFragment-GlareExtraBold.otf") format("opentype");
+    src: url("/tmp/public/fonts/PPFragment-GlareExtraBold.otf")
+      format("opentype");
   }
   @font-face {
     font-family: "fragment-sans";
     font-weight: 300;
-    src: url("/public/fonts/PPFragment-SansLight.otf") format("opentype");
+    src: url("/tmp/public/fonts/PPFragment-SansLight.otf") format("opentype");
   }
   @font-face {
     font-family: "fragment-sans";
     font-weight: 400;
-    src: url("/public/fonts/PPFragment-SansRegular.otf") format("opentype");
+    src: url("/tmp/public/fonts/PPFragment-SansRegular.otf") format("opentype");
   }
   @font-face {
     font-family: "fragment-sans";
     font-weight: 800;
-    src: url("/public/fonts/PPFragment-SansExtraBold.otf") format("opentype");
+    src: url("/tmp/public/fonts/PPFragment-SansExtraBold.otf")
+      format("opentype");
   }
   @font-face {
     font-family: "fragment-text";
     font-weight: 400;
-    src: url("/public/fonts/PPFragment-TextRegular.otf") format("opentype");
+    src: url("/tmp/public/fonts/PPFragment-TextRegular.otf") format("opentype");
   }
 }
 

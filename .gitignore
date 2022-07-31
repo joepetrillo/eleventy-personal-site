@@ -1,7 +1,11 @@
 # Node Modules and Eleventy Output
 node_modules
-_site
+tmp
 
 # Dot Files
 .DS_Store
 .env
+
+# Parcel Files
+.parcel-cache
+_site

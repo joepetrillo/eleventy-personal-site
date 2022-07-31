@@ -10,9 +10,9 @@ My older personal site (not the site you are currently reading this on) was a gr
 
 The first step was creating a simple design in figma. I wanted something that was clean and easy on the eyes. Here are the early designs I came up with. You can see the similarities in the finished product, especially in the overall structure/layout.
 
-![Original design desktop](/public/img/Desktop.png)
+![Original design desktop](/tmp/public/img/Desktop.png)
 
-![Original design mobile](/public/img/Mobile.png)
+![Original design mobile](/tmp/public/img/Mobile.png)
 
 ## The SSG
 

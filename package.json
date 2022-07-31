@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "eleventy --serve & tailwindcss -i ./src/public/main.css -o ./_site/public/main.css --watch",
-    "build": "eleventy && tailwindcss -i ./src/public/main.css -o ./_site/public/main.css "
+    "dev": "eleventy --watch & parcel watch './tmp/**/*.html' --dist-dir ./_site --no-source-maps --no-cache & sirv ./_site --dev",
+    "build": "eleventy && parcel build './tmp/**/*.html' --dist-dir ./_site --no-source-maps"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
@@ -12,7 +12,12 @@
     "@tailwindcss/typography": "^0.5.4",
     "eleventy-plugin-time-to-read": "^1.2.0",
     "luxon": "^3.0.1",
+    "parcel": "^2.6.2",
     "prettier-plugin-tailwindcss": "^0.1.12",
+    "sirv-cli": "^2.0.2",
     "tailwindcss": "^3.1.6"
-  }
+  },
+  "browserslist": [
+    "defaults"
+  ]
 }
