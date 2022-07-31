@@ -28,16 +28,8 @@ document.getElementById("close-btn").addEventListener("click", () => {
   });
 });
 
-// if (document.querySelector("article")) {
-//   gsap.from("article", {
-//     duration: 0.9,
-//     y: "50px",
-//     opacity: 0,
-//   });
-// }
-
 gsap.from("main", {
-  duration: 0.8,
+  duration: 0.7,
   y: "50px",
   opacity: 0,
 });
@@ -49,7 +41,29 @@ gsap.from("footer", {
   delay: 0.2,
   scrollTrigger: {
     trigger: "footer",
-    start: "50px bottom",
+    start: "80px bottom",
     toggleActions: "play none none none",
   },
 });
+
+if (document.getElementById("rotate")) {
+  // effect that swaps text
+  gsap.registerEffect({
+    name: "swapText",
+    effect: (targets, config) => {
+      const tl = gsap.timeline({ delay: config.delay });
+      tl.to(targets, { y: "-30%", autoAlpha: 0, duration: config.duration });
+      tl.add(() => (targets[0].innerText = config.text));
+      tl.to(targets, { y: "30%", duration: 0 });
+      tl.to(targets, { y: "0%", autoAlpha: 1, duration: config.duration });
+      return tl;
+    },
+    defaults: { duration: 0.7 },
+    extendTimeline: true,
+  });
+
+  const tl = gsap.timeline({ repeat: -1, delay: 0 });
+  tl.swapText("#rotate", { text: "Student.", delay: 1.8 })
+    .swapText("#rotate", { text: "Golfer.", delay: 1.8 })
+    .swapText("#rotate", { text: "Developer.", delay: 1.8 }); // back to the start
+}

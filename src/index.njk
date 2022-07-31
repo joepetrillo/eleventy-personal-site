@@ -4,14 +4,21 @@ layout: "base.njk"
 ---
 
 <div class="mx-auto max-w-5xl text-lg">
-  <section class="mb-20 flex flex-col gap-10 lg:flex-row lg:gap-20">
+  <section
+    class="mb-20 flex flex-col gap-10 lg:flex-row lg:justify-between lg:gap-0"
+  >
     <h1
-      class="max-w-max shrink-0 bg-gradient-to-r from-[#fff3a2] to-[#ff6764] bg-clip-text font-fragment-glare text-4xl font-extrabold leading-[50px] text-transparent sm:text-6xl sm:leading-[80px]"
+      class="max-w-max bg-gradient-to-r from-[#fff3a2] to-[#ff6764] bg-clip-text font-fragment-glare text-4xl font-extrabold leading-[50px] text-transparent sm:text-6xl sm:leading-[80px]"
     >
       Hey, I'm Joe.
-      <span class="block">A Developer.</span>
+      <span class="block"
+        >A
+        <span id="rotate" class="inline-block text-[#ffc38c]"
+          >Developer.</span
+        ></span
+      >
     </h1>
-    <p class="leading-[32px] text-stone-300">
+    <p class="leading-[32px] text-stone-300 lg:max-w-lg lg:pl-2">
       I'm a senior at the University of Massachusetts Amherst studying computer
       science, graduating in the summer of 2023. I have a strong interest in
       full stack development and the JavaScript ecosystem. I am currently
@@ -23,22 +30,37 @@ layout: "base.njk"
     <h2 class="font-fragment-glare text-3xl font-extrabold">Timeline</h2>
     <div class="leading-[32px] text-stone-300">
       <div>
-        <h5>Loom</h5>
+        <h5 class="font-fragment-glare text-3xl font-extrabold text-stone-50">
+          Loom
+        </h5>
         <p>Software Engineer Intern</p>
-        <p>Internship Program Cancelled</p>
+        <p>Cancelled 😢</p>
       </div>
       <div>
-        <h5>UMass Amherst</h5>
+        <h5 class="font-fragment-glare text-3xl font-extrabold text-stone-50">
+          UMass Amherst
+        </h5>
         <p>Undergraduate CS Student</p>
         <p>2019 - 2023</p>
       </div>
       <div>
-        <h5>Pinehills Golf Club</h5>
+        <h5 class="font-fragment-glare text-3xl font-extrabold text-stone-50">
+          Pinehills Golf Club
+        </h5>
         <p>Outside Services</p>
         <p>2018 - 2021</p>
       </div>
       <div>
-        <h5>Born</h5>
+        <h5 class="font-fragment-glare text-3xl font-extrabold text-stone-50">
+          Water Wizz
+        </h5>
+        <p>Ride Attendant</p>
+        <p>Summer 2017</p>
+      </div>
+      <div>
+        <h5 class="font-fragment-glare text-3xl font-extrabold text-stone-50">
+          Born
+        </h5>
         <p>Cape Cod, MA</p>
         <p>2001</p>
       </div>
