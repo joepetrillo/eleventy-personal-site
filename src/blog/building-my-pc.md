@@ -35,7 +35,7 @@ Once I had all my parts I could finally start the build. Because this process wa
 
 Wiring was the part I found to be the most difficult. I wanted to ensure everything looked clean and that I had good cable management. Here is the only picture I found of the final product... not too shabby.
 
-![old-build](/tmp/public/img/old-build.png)
+![old-build](/_tmp/public/img/old-build.png)
 
 All that was left to do was see if it booted and then install Windows. My first boot was **unsuccessful**, which was nerve wracking at first, but I quickly rechecked all my wiring and found I had not fully connected the main 24 pin power cable. After that, everything worked like a charm.
 
@@ -53,6 +53,6 @@ Over the years, I have upgraded my computer many times in small increments.
 
 And here we are today... (zip ties are temporary)
 
-![build-today](/tmp/public/img/new-build.png)
+![build-today](/_tmp/public/img/new-build.png)
 
 I have recently been interested in rebuilding into an even smaller form factor, mini itx, for better portability between home and school. I would also like to upgrade my graphics card but the current market still makes it extremely hard to do so. Maybe in the future?

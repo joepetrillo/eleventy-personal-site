@@ -1,6 +1,6 @@
 # Node Modules and Eleventy Output
 node_modules
-tmp
+_tmp
 
 # Dot Files
 .DS_Store

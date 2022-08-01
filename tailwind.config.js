@@ -11,7 +11,7 @@ const disabledCss = {
 };
 
 module.exports = {
-  content: ["./tmp/**/*.{html,js}"],
+  content: ["./_tmp/**/*.{html,js}"],
   theme: {
     extend: {
       fontFamily: {

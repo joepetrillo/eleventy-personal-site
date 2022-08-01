@@ -30,7 +30,7 @@ module.exports = function (eleventyConfig) {
       dataTemplateEngine: "njk",
       htmlTemplateEngine: "njk",
       input: "src",
-      output: "tmp",
+      output: "_tmp",
     },
   };
 };
