@@ -1,9 +1,7 @@
-import gsap from "gsap";
+import gsap, { Expo } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { ExpoScaleEase as Expo } from "gsap/EasePack";
 
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(Expo);
 
 const openMenu = gsap.timeline({
   paused: "true",
