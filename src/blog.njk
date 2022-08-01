@@ -11,7 +11,7 @@ layout: "base.njk"
 <div class="mx-auto grid max-w-5xl gap-6 md:grid-cols-2 lg:gap-10">
   {%- for post in collections.post | reverse -%}
   <a
-    class="rounded-2xl border-x-4 border-y-4 border-stone-800 py-8 px-5 transition-[background-color] duration-150 ease-out hover:bg-stone-800 md:px-8 md:py-9"
+    class="rounded-2xl border-x-[3px] border-y-[3px] border-stone-800 py-8 px-5 transition-[background-color] duration-150 ease-out hover:bg-stone-800 md:px-8 md:py-9"
     href="{{ post.url }}"
   >
     <div class="mb-6">
