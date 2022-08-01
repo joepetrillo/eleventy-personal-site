@@ -1,3 +1,4 @@
+import { DateTime, Duration } from "luxon";
 import gsap, { Expo } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
@@ -76,4 +77,15 @@ if (document.getElementById("rotate")) {
     .swapText("#rotate", { text: "Movie Buff.", delay: 1.8 })
     .swapText("#rotate", { text: "Designer.", delay: 1.8 })
     .swapText("#rotate", { text: "Developer.", delay: 1.8 }); // back to the start
+
+  const diff = DateTime.now()
+    .diff(DateTime.fromISO("2001-03-11"), ["years", "months", "days"])
+    .toObject();
+  diff.days = Math.floor(diff.days);
+
+  const totalDuration = Duration.fromObject(diff).toHuman();
+
+  document.getElementById("alive").textContent = totalDuration;
 }
+
+document.getElementById("year").textContent = DateTime.now().year;
