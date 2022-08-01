@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "eleventy --watch --quiet & parcel watch './_tmp/**/*.html' --dist-dir ./_site --no-source-maps --no-cache & sirv ./_site --dev --host",
-    "build": "eleventy && parcel build './_tmp/**/*.html' --dist-dir ./_site --no-source-maps"
+    "build": "eleventy && parcel build './_tmp/**/*.html' --dist-dir ./_site --no-source-maps --no-cache"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
