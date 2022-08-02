@@ -1,7 +1,7 @@
 ---
 title: "Joe Petrillo"
 layout: "base.njk"
-description: "I'm a Senior at UMass Amherst studying computer science. Full stack development and the JavaScript ecosystem excite me."
+description: "I'm a senior at UMass Amherst studying computer science. Full stack development and the JavaScript ecosystem excite me."
 ---
 
 <div class="mx-auto max-w-5xl text-lg">
@@ -18,9 +18,9 @@ description: "I'm a Senior at UMass Amherst studying computer science. Full stac
     </h1>
     <p class="leading-[32px] text-stone-300 lg:max-w-lg lg:pl-2">
       I'm a senior at the University of Massachusetts Amherst studying computer
-      science, graduating in the summer of 2023. I have a strong interest in
-      full stack development and the JavaScript ecosystem. I am currently
-      seeking a position as a new grad software engineer.
+      science, graduating in May 2023. I have a strong interest in full stack
+      development and the JavaScript ecosystem. I am currently seeking a
+      position as a new grad software engineer.
     </p>
   </section>
 
@@ -47,9 +47,9 @@ description: "I'm a Senior at UMass Amherst studying computer science. Full stac
         UMass Amherst
       </h5>
       <p class="mb-3">
-        Unfortunately, half of my time here has been online due to Covid. I've
-        taken classes about data structures, algorithms, web programming,
-        networking, databases, systems and more. I graduate this year!
+        I'm excited to be taking scalable web systems this fall. I've taken
+        classes about data structures, algorithms, web programming, networking,
+        databases, systems and more. I graduate this year!
       </p>
       <span class="inline-block rounded-md bg-stone-800 px-4 py-2"
         >2019 - 2023</span
@@ -75,10 +75,10 @@ description: "I'm a Senior at UMass Amherst studying computer science. Full stac
         Pinehills Golf Club
       </h5>
       <p class="mb-3">
-        This was the best summer job. I assisted 250-300 golfers daily and
-        helped run highly acclaimed tournaments. Storing and loading golf bags,
-        cleaning equipment and golf carts, and managing tee times were my
-        primary roles.
+        This was the best summer job. Storing and loading golf bags, cleaning
+        equipment and golf carts, and managing tee times were my primary roles.
+        I assisted 250-300 golfers daily and helped run highly acclaimed
+        tournaments.
       </p>
       <span class="inline-block rounded-md bg-stone-800 px-4 py-2"
         >2018 - 2021</span
@@ -104,9 +104,10 @@ description: "I'm a Senior at UMass Amherst studying computer science. Full stac
         Water Wizz
       </h5>
       <p class="mb-3">
-        Water Wizz was my first job ever, I was just 16 at the time. As a slide
+        Water Wizz was my first job ever, I was just 16 at the time. As a ride
         attendant, I enforced rules as necessary to ensure safety and trained
-        several new employees. This is the water park in "Grown Ups"!
+        several new employees. This is the water park featured in the popular
+        movie "Grown Ups"!
       </p>
       <span class="inline-block rounded-md bg-stone-800 px-4 py-2"
         >2017 - 2018</span
@@ -134,48 +135,52 @@ description: "I'm a Senior at UMass Amherst studying computer science. Full stac
       <p class="mb-3">
         Here is where it all began. I've been alive for
         <span id="alive"></span> and counting. I grew up on Cape Cod, MA and
-        have lived here my whole life.
+        have lived here my entire life.
       </p>
       <span class="inline-block rounded-md bg-stone-800 px-4 py-2">2001</span>
     </div>
   </section>
 
-  <section class="grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-6 lg:gap-10">
-    <div class="px-5 md:px-8">
-      <h2 class="mb-8 font-fragment-glare text-3xl font-extrabold">
+  <section class="grid grid-cols-1 gap-20 sm:grid-cols-2 sm:gap-6 lg:gap-10">
+    <div>
+      <h2 class="mb-6 font-fragment-glare text-3xl font-extrabold">
         Latest Posts
       </h2>
       {%- for post in collections.post.slice(collections.post.length-2,
       collections.post.length) | reverse -%}
-      <div class="mb-8">
-        <a href="{{ post.url }}">
-          <h3 class="mb-1 text-xl underline">
+      <a href="{{ post.url }}">
+        <div
+          class="mb-6 rounded-md border-2 border-stone-800 p-4 transition-[background-color] duration-150 ease-out hover:bg-stone-800"
+        >
+          <h3 class="mb-1 text-lg underline">
             {{ post.data.title }}
           </h3>
-        </a>
-        <span class="text-base text-stone-300">
-          {{ post.data.date | date }}
-        </span>
-      </div>
+          <span class="text-base text-stone-300">
+            {{ post.data.date | date }}
+          </span>
+        </div>
+      </a>
       {%- endfor %}
       <a class="underline" href="/blog/">View all blog posts</a>
     </div>
-    <div class="px-5 md:px-8">
-      <h2 class="mb-8 font-fragment-glare text-3xl font-extrabold">
+    <div>
+      <h2 class="mb-6 font-fragment-glare text-3xl font-extrabold">
         Latest Projects
       </h2>
       {%- for project in collections.project.slice(collections.project.length-2,
       collections.project.length) | reverse -%}
-      <div class="mb-8">
-        <a href="{{ project.url }}">
-          <h3 class="mb-1 text-xl underline">
+      <a href="{{ project.url }}">
+        <div
+          class="mb-6 rounded-md border-2 border-stone-800 p-4 transition-[background-color] duration-150 ease-out hover:bg-stone-800"
+        >
+          <h3 class="mb-1 text-lg underline">
             {{ project.data.title }}
           </h3>
-        </a>
-        <span class="text-base text-stone-300">
-          {{ project.data.date | date }}
-        </span>
-      </div>
+          <span class="text-base text-stone-300">
+            {{ project.data.date | date }}
+          </span>
+        </div>
+      </a>
       {%- endfor %}
       <a class="underline" href="/projects/">View all projects</a>
     </div>

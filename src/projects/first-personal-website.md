@@ -1,5 +1,5 @@
 ---
-title: "My Personal Website"
+title: "My First Personal Website"
 date: "2021-12-30"
 description: "This was a great way to practice my CSS skills and dive into using a static site generator for the first time. I post my blog posts, project updates and anything else I want here. I think everyone should have one."
 ---
