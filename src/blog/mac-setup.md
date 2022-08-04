@@ -153,7 +153,7 @@ Install [Fig](https://fig.io) -
 
 **Git Settings**
 
-“`shell
+```shell
 git config --global user.name "Name Here"
 git config --global user.email foo@gmail.com
 
@@ -169,5 +169,3 @@ This sums up my current preferences for setting up a fresh macOS install. I like
 - [SWYX New Mac Setup](https://www.swyx.io/new-mac-setup-2021/)
 - [Tania Rascia’s Setup](https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/?ck_subscriber_id=591519942)
 - [macOS Setup Guide](http://sourabhbajaj.com/mac-setup/)
-
-```
