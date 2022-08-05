@@ -35,13 +35,13 @@ document.getElementById("close-btn").addEventListener("click", () => {
 gsap.from("main", {
   duration: 0.7,
   y: "50px",
-  opacity: 0,
+  autoAlpha: 0,
 });
 
 gsap.from("footer", {
   duration: 0.8,
   y: "-50px",
-  opacity: 0,
+  autoAlpha: 0,
   delay: 0.2,
   scrollTrigger: {
     trigger: "footer",
@@ -71,12 +71,12 @@ if (document.getElementById("rotate")) {
   });
 
   const tl = gsap.timeline({ repeat: -1, delay: 0 });
-  tl.swapText("#rotate", { text: "Student.", delay: 1.8 })
-    .swapText("#rotate", { text: "Golfer.", delay: 1.8 })
-    .swapText("#rotate", { text: "Builder.", delay: 1.8 })
-    .swapText("#rotate", { text: "Movie Buff.", delay: 1.8 })
-    .swapText("#rotate", { text: "Designer.", delay: 1.8 })
-    .swapText("#rotate", { text: "Developer.", delay: 1.8 }); // back to the start
+  tl.swapText("#rotate", { text: "Student.", delay: 1.6 })
+    .swapText("#rotate", { text: "Golfer.", delay: 1.6 })
+    .swapText("#rotate", { text: "Builder.", delay: 1.6 })
+    .swapText("#rotate", { text: "Movie Buff.", delay: 1.6 })
+    .swapText("#rotate", { text: "Designer.", delay: 1.6 })
+    .swapText("#rotate", { text: "Developer.", delay: 1.6 }); // back to the start
 
   const diff = DateTime.now()
     .diff(DateTime.fromISO("2001-03-11"), ["years", "months", "days"])
