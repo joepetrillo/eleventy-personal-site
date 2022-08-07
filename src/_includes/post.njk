@@ -1,0 +1,22 @@
+---
+layout: "base.njk"
+---
+
+<article>
+  <div class="mb-20">
+    <h1
+      class="mx-auto max-w-5xl text-center font-fragment-glare text-3xl font-extrabold leading-[40px] sm:text-4xl sm:leading-[50px] md:text-5xl md:leading-[65px] lg:text-6xl lg:leading-[80px]"
+    >
+      {{ title }}
+    </h1>
+    <div class="mt-10 flex flex-col items-center gap-3 text-stone-300">
+      <span>Posted {{ date | date }}</span>
+      <span>{{ content | timeToRead }} read</span>
+    </div>
+  </div>
+  <div
+    class="prose prose-lg !prose-invert prose-stone mx-auto prose-headings:font-fragment-glare prose-img:mx-auto prose-img:max-h-96 prose-img:rounded-2xl"
+  >
+    {{ content | safe }}
+  </div>
+</article>

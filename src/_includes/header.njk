@@ -1,43 +1,111 @@
-<header>
-  <img
-    class="header__headshot"
-    src="https://cdn.discordapp.com/attachments/334513647529361408/901838149506957312/download-2.png"
-    alt="headshot"
-  />
+<header
+  class="mx-auto mt-10 mb-20 flex max-w-5xl items-center justify-between font-fragment-glare text-xl font-extrabold"
+>
+  <!-- Picture and Name -->
+  <a href="/" class="flex items-center gap-3">
+    <img
+      src="/_tmp/public/img/header.png"
+      alt="headshot"
+      class="max-w-[3.5rem] rounded-full"
+    /><span>Joe Petrillo</span></a
+  >
 
-  <div>
-    <a href="/"
-      ><h1 class="header__title hover-underline-animation">JOE PETRILLO</h1></a
+  <!-- Open Menu Button -->
+  <button id="open-btn" class="md:hidden" name="open_menu">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-12 w-12"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      stroke-width="2"
     >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M4 6h16M4 12h16m-7 6h7"
+      />
+    </svg>
+  </button>
 
-    <div class="nav-wrapper">
-      <nav class="navlinks-wrapper">
-        <a class="navlink" target="_blank" href="https://github.com/joepetrillo"
-          ><i class="navlink__icon fab fa-github"></i>GitHub</a
-        >
+  <!-- Mobile Nav Menu -->
+  <nav
+    class="fixed top-0 left-0 z-10 h-full w-full -translate-x-full bg-stone-800 md:static md:h-auto md:w-auto md:!translate-x-0 md:bg-transparent"
+  >
+    <!-- Close Menu Button -->
+    <button
+      id="close-btn"
+      class="absolute top-11 right-6 md:hidden"
+      name="close_menu"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-12 w-12"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+    </button>
+
+    <!-- Nav Links -->
+    <div class="flex h-full items-center justify-center md:block md:h-auto">
+      <div
+        class="flex flex-col items-start justify-center gap-12 text-3xl md:flex-row md:items-center md:gap-4 md:text-xl"
+      >
         <a
-          class="navlink"
-          target="_blank"
-          href="https://linkedin.com/in/jpetrillo19"
-          ><i class="navlink__icon fab fa-linkedin"></i>LinkedIn</a
+          class="flex items-center gap-2 rounded-md p-3 hover:bg-stone-700 md:!translate-y-0 md:p-2 md:!opacity-100 md:hover:bg-stone-800"
+          href="/blog/"
         >
-        <a class="navlink" href="/blog/"
-          ><i class="navlink__icon fas fa-book"></i>Blog</a
-        >
-        <a class="navlink" href="/projects/"
-          ><i class="navlink__icon fas fa-lightbulb"></i>Projects</a
-        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="h-8 w-8 fill-stone-50 md:h-6 md:w-6"
+          >
+            <path
+              d="M448 336v-288C448 21.49 426.5 0 400 0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-31.1c0-11.72-6.607-21.52-16-27.1v-81.36C441.8 362.8 448 350.2 448 336zM143.1 128h192C344.8 128 352 135.2 352 144C352 152.8 344.8 160 336 160H143.1C135.2 160 128 152.8 128 144C128 135.2 135.2 128 143.1 128zM143.1 192h192C344.8 192 352 199.2 352 208C352 216.8 344.8 224 336 224H143.1C135.2 224 128 216.8 128 208C128 199.2 135.2 192 143.1 192zM384 448H96c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32h288V448z"
+            />
+          </svg>
+          <span>Blog</span>
+        </a>
         <a
-          class="navlink"
-          target="_blank"
-          href="/assets/pdf/Joseph-Petrillo-Resume.pdf"
-          ><i class="navlink__icon fas fa-file-alt"></i>Resume</a
+          class="flex items-center gap-2 rounded-md p-3 hover:bg-stone-700 md:!translate-y-0 md:p-2 md:!opacity-100 md:hover:bg-stone-800"
+          href="/projects/"
         >
-      </nav>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+            class="h-8 w-8 fill-stone-50 md:h-6 md:w-6"
+          >
+            <path
+              d="M112.1 454.3c0 6.297 1.816 12.44 5.284 17.69l17.14 25.69c5.25 7.875 17.17 14.28 26.64 14.28h61.67c9.438 0 21.36-6.401 26.61-14.28l17.08-25.68c2.938-4.438 5.348-12.37 5.348-17.7L272 415.1h-160L112.1 454.3zM191.4 .0132C89.44 .3257 16 82.97 16 175.1c0 44.38 16.44 84.84 43.56 115.8c16.53 18.84 42.34 58.23 52.22 91.45c.0313 .25 .0938 .5166 .125 .7823h160.2c.0313-.2656 .0938-.5166 .125-.7823c9.875-33.22 35.69-72.61 52.22-91.45C351.6 260.8 368 220.4 368 175.1C368 78.61 288.9-.2837 191.4 .0132zM192 96.01c-44.13 0-80 35.89-80 79.1C112 184.8 104.8 192 96 192S80 184.8 80 176c0-61.76 50.25-111.1 112-111.1c8.844 0 16 7.159 16 16S200.8 96.01 192 96.01z"
+            />
+          </svg>
+          <span>Projects</span>
+        </a>
+        <a
+          class="flex items-center gap-2 rounded-md p-3 hover:bg-stone-700 md:!translate-y-0 md:p-2 md:!opacity-100 md:hover:bg-stone-800"
+          target="_blank"
+          href="/_tmp/public/img/resume.pdf"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+            class="h-8 w-8 fill-stone-50 md:h-6 md:w-6"
+          >
+            <path
+              d="M256 0v128h128L256 0zM224 128L224 0H48C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48V160h-127.1C238.3 160 224 145.7 224 128zM272 416h-160C103.2 416 96 408.8 96 400C96 391.2 103.2 384 112 384h160c8.836 0 16 7.162 16 16C288 408.8 280.8 416 272 416zM272 352h-160C103.2 352 96 344.8 96 336C96 327.2 103.2 320 112 320h160c8.836 0 16 7.162 16 16C288 344.8 280.8 352 272 352zM288 272C288 280.8 280.8 288 272 288h-160C103.2 288 96 280.8 96 272C96 263.2 103.2 256 112 256h160C280.8 256 288 263.2 288 272z"
+            />
+          </svg>
+          <span>Resume</span>
+        </a>
+      </div>
     </div>
-  </div>
-
-  <div class="nav-btn">
-    <div class="nav-btn-burger"></div>
-  </div>
+  </nav>
 </header>

@@ -4,52 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="I'm a student at UMass Amherst studying Computer Science who has a passion for full stack development and is constantly striving to learn more."
-    />
-    <script
-      src="https://kit.fontawesome.com/ffed67109b.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <meta name="description" content="{{ description }}" />
+    <script type="module" src="/_tmp/public/js/main.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="/_tmp/public/img/favicon.ico" />
+    <link rel="stylesheet" href="/_tmp/public/css/main.css" />
+    <link rel="stylesheet" href="/_tmp/public/css/code.css" />
     <title>{{ title }}</title>
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://jpetrillo.com/" />
-    <meta property="og:title" content="Joe Petrillo" />
-    <meta
-      property="og:description"
-      content="I'm a student at UMass Amherst studying Computer Science who has a passion for full stack development and is constantly striving to learn more."
-    />
-    <meta
-      property="og:image"
-      content="https://cdn.discordapp.com/attachments/334513647529361408/901838149506957312/download-2.png"
-    />
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://jpetrillo.com/" />
-    <meta property="twitter:title" content="Joe Petrillo" />
-    <meta
-      property="twitter:description"
-      content="I'm a student at UMass Amherst studying Computer Science who has a passion for full stack development and is constantly striving to learn more."
-    />
-    <meta
-      property="twitter:image"
-      content="https://cdn.discordapp.com/attachments/334513647529361408/901838149506957312/download-2.png"
-    />
+    <noscript>
+      <h1 class="mt-10 text-center text-[#fff2a0]">
+        JavaScript is required for this page to work properly!
+      </h1>
+
+      <style>
+        .invisible {
+          visibility: visible;
+        }
+      </style>
+    </noscript>
   </head>
 
-  <body>
+  <body class="bg-stone-1000 px-6 font-fragment-text text-stone-50">
     {% include "header.njk" %}
 
-    <main>
+    <main class="invisible">
       {{ content | safe }}
-
-      {% include "footer.njk" %}
     </main>
 
-    <script src="/assets/js/main.js"></script>
+    {% include "footer.njk" %}
   </body>
 </html>

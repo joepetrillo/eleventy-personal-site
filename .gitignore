@@ -1,16 +1,11 @@
-# Misc
-*.log
-*.scssc
-*.swp
-.parcel-cache
-.DS_Store
-.sass-cache
-.env
-.cache
-npm-debug.*
-Thumbs.db
-
-# Node modules and output
+# Node Modules and Eleventy Output
 node_modules
 _tmp
+
+# Dot Files
+.DS_Store
+.env
+
+# Parcel Files
+.parcel-cache
 _site

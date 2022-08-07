@@ -1,93 +1,220 @@
 ---
 title: "Joe Petrillo"
 layout: "base.njk"
+description: "I'm a senior at UMass Amherst studying computer science. Full stack development and the JavaScript ecosystem excite me."
 ---
 
-<section>
-  <h2 class="section-header">About</h2>
-  <p>
-    Hi! I'm Joe Petrillo. I am a junior at the University of Massachusetts
-    Amherst studying Computer Science. I have a passion for full stack
-    development as well as UI/UX design, and am constantly striving to learn
-    more.
-  </p>
-  <p>
-    I have always called Cape Cod Massachusetts my home. Outside of my studies I
-    enjoy playing golf, building computers and taking the occasional tropical
-    beach vacation. (Ever been to Aruba?)
-  </p>
-</section>
+<div class="mx-auto max-w-5xl text-lg">
+  <section
+    class="mb-20 flex flex-col gap-10 lg:flex-row lg:justify-between lg:gap-0"
+  >
+    <h1
+      class="max-w-max bg-gradient-to-r from-[#fff6a1] to-[#ff9883] bg-clip-text font-fragment-glare text-4xl font-extrabold leading-[50px] text-transparent sm:text-6xl sm:leading-[80px]"
+    >
+      Hey, I'm Joe.
+      <span class="block text-stone-50"
+        >A <span id="rotate" class="inline-block">Developer.</span></span
+      >
+    </h1>
+    <p class="leading-[32px] text-stone-300 lg:max-w-lg lg:pl-2">
+      I'm a senior at the University of Massachusetts Amherst studying computer
+      science, graduating in May 2023. I have a strong interest in full stack
+      development and the JavaScript ecosystem. I am currently seeking a
+      position as a new grad software engineer.
+    </p>
+  </section>
 
-<section>
-  <h2 class="section-header">Timeline</h2>
-  <div class="timeline-entry">
-    <h5 class="timeline-entry__title">Loom</h5>
-    <p class="timeline-entry__desc lighter">Software Engineer Intern</p>
-    <p class="timeline-entry__dates lighter">Internship Program Cancelled</p>
-  </div>
-  <div class="timeline-entry">
-    <h5 class="timeline-entry__title">UMass Amherst</h5>
-    <p class="timeline-entry__desc lighter">Undergraduate CS Student</p>
-    <p class="timeline-entry__dates lighter">2019 - 2023</p>
-  </div>
-  <div class="timeline-entry">
-    <h5 class="timeline-entry__title">Pinehills Golf Club</h5>
-    <p class="timeline-entry__desc lighter">Outside Services</p>
-    <p class="timeline-entry__dates lighter">2018 - 2021</p>
-  </div>
-  <div class="timeline-entry">
-    <h5 class="timeline-entry__title">Born</h5>
-    <p class="timeline-entry__desc lighter">Cape Cod, MA</p>
-    <p class="timeline-entry__dates lighter">2001</p>
-  </div>
-</section>
-
-<section>
-  <h2 class="section-header">Latest Posts</h2>
-  {%- for post in collections.post.slice(collections.post.length-2,
-  collections.post.length) | reverse -%}
-  <a href="{{ post.url }}">
-    <div class="article-card">
-      <div class="article-card__header">
-        <h5 class="article-card__title">{{ post.data.title }}</h5>
-        <p class="article-card__date lighter">
-          {{ post.data.date | postDate }}
+  <section
+    class="relative mb-20 ml-[26px] pl-[60px] leading-[32px] text-stone-300 before:absolute before:left-0 before:top-0 before:h-full before:w-1 before:rounded-2xl before:bg-stone-50 md:ml-0 md:pl-0 md:before:left-1/2 md:before:-ml-[2px]"
+  >
+    <div class="mb-20 flex-nowrap md:grid md:grid-cols-2">
+      <div class="relative mb-10 md:mb-0 md:pr-[52px] md:text-right">
+        <div
+          class="absolute -left-[86px] -top-[2px] flex h-14 w-14 items-center justify-center rounded-md bg-[#fff2a0] md:-right-[28px] md:left-auto"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 512"
+            class="h-9 w-9 fill-stone-1000"
+          >
+            <path
+              d="M623.1 136.9l-282.7-101.2c-13.73-4.91-28.7-4.91-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09L76.07 204.6c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480H93.11c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89c4.252-17.76 12.88-33.82 24.94-47.03l190.6 68.23c13.73 4.91 28.7 4.91 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160S633.6 140.4 623.1 136.9zM351.1 314.4C341.7 318.1 330.9 320 320 320c-10.92 0-21.69-1.867-32-5.555L142.8 262.5L128 405.3C128 446.6 213.1 480 320 480c105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z"
+            />
+          </svg>
+        </div>
+        <h5
+          class="mb-3 font-fragment-glare text-3xl font-extrabold text-stone-50"
+        >
+          UMass Amherst
+        </h5>
+        <p class="mb-3">
+          I'm excited to be taking scalable web systems this fall. I've taken
+          classes about data structures, algorithms, web programming,
+          networking, databases, systems and more. I graduate this year!
         </p>
+        <span class="inline-block rounded-md bg-stone-800 px-4 py-2"
+          >2019 - 2023</span
+        >
       </div>
-      <p class="article-card__desc lighter">{{ post.data.description }}</p>
+      <div class="max-w-sm md:max-w-md md:pl-[52px]">
+        <img
+          src="/_tmp/public/img/umass.webp"
+          alt="umass"
+          class="rounded-2xl"
+        />
+      </div>
     </div>
-  </a>
-  {%- endfor %}
-
-  <a href="/blog/" class="article-card__viewall">View all blog posts</a>
-</section>
-
-<section>
-  <h2 class="section-header">Latest Projects</h2>
-  {%- for project in collections.project.slice(collections.project.length-2,
-  collections.project.length) | reverse -%}
-  <a href="{{ project.url }}">
-    <div class="article-card">
-      <div class="article-card__header">
-        <h5 class="article-card__title">{{ project.data.title }}</h5>
-        <p class="article-card__date lighter">
-          {{ project.data.date | postDate }}
+    <div class="mb-20 md:grid md:grid-cols-2">
+      <div class="relative mb-10 md:order-last md:mb-0 md:pl-[52px]">
+        <div
+          class="absolute -left-[86px] -top-[2px] flex h-14 w-14 items-center justify-center rounded-md bg-[#fff2a0] md:-left-[28px]"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+            class="h-9 w-9 fill-stone-1000"
+          >
+            <path
+              d="M96 399.1c0 17.67 14.33 31.1 32 31.1s32 14.33 32 31.1v48h64v-48c0-17.67 14.33-31.1 32-31.1s32-14.33 32-31.1v-16H96V399.1zM192 .0001c-106 0-192 86.68-192 193.6c0 65.78 32.82 123.5 82.52 158.4h218.1C351.2 317.1 384 259.4 384 193.6C384 86.68 298 .0001 192 .0001zM179 205.1C183 206.9 187.4 208 192 208c17.53 0 31.74-14.33 31.74-31.1c0-4.688-1.111-9.062-2.904-13.07c11.03 5.016 18.77 16.08 18.77 29.07c0 17.67-14.21 31.1-31.74 31.1C194.1 224 184 216.2 179 205.1zM223.7 303.1c-12.88 0-23.86-7.812-28.83-18.93c3.977 1.809 8.316 2.93 12.96 2.93c17.53 0 31.74-14.33 31.74-31.1c0-4.688-1.109-9.062-2.904-13.07c11.03 5.016 18.77 16.08 18.77 29.07C255.5 289.7 241.3 303.1 223.7 303.1zM287.2 240c-12.88 0-23.86-7.812-28.83-18.93c3.977 1.809 8.316 2.93 12.96 2.93c17.53 0 31.73-14.33 31.73-31.1c0-4.688-1.109-9.062-2.902-13.07C311.2 183.9 318.9 195 318.9 208C318.9 225.7 304.7 240 287.2 240z"
+            />
+          </svg>
+        </div>
+        <h5
+          class="mb-3 font-fragment-glare text-3xl font-extrabold text-stone-50"
+        >
+          Pinehills Golf Club
+        </h5>
+        <p class="mb-3">
+          This was the best summer job. Storing and loading golf bags, cleaning
+          equipment and golf carts, and managing tee times were my primary
+          roles. I assisted 250-300 golfers daily and helped run highly
+          acclaimed tournaments.
         </p>
+        <span class="inline-block rounded-md bg-stone-800 px-4 py-2"
+          >2018 - 2021</span
+        >
       </div>
-      <p class="article-card__desc lighter">{{ project.data.description }}</p>
+      <div class="max-w-sm md:order-first md:ml-auto md:max-w-md md:pr-[52px]">
+        <img
+          src="/_tmp/public/img/pinehills.webp"
+          alt="pinehills"
+          class="rounded-2xl"
+        />
+      </div>
     </div>
-  </a>
-  {%- endfor %}
+    <div class="mb-20 md:grid md:grid-cols-2">
+      <div class="relative mb-10 md:mb-0 md:pr-[52px] md:text-right">
+        <div
+          class="absolute -left-[86px] -top-[2px] flex h-14 w-14 items-center justify-center rounded-md bg-[#fff2a0] md:-right-[28px] md:left-auto"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 512"
+            class="h-9 w-9 fill-stone-1000"
+          >
+            <path
+              d="M115.4 136.8l102.1 37.35c35.13-81.62 86.25-144.4 139-173.7c-95.88-4.875-188.8 36.96-248.5 111.7C101.2 120.6 105.2 133.2 115.4 136.8zM247.6 185l238.5 86.87c35.75-121.4 18.62-231.6-42.63-253.9c-7.375-2.625-15.12-4.062-23.12-4.062C362.4 13.88 292.1 83.13 247.6 185zM521.5 60.51c6.25 16.25 10.75 34.62 13.13 55.25c5.75 49.87-1.376 108.1-18.88 166.9l102.6 37.37c10.13 3.75 21.25-3.375 21.5-14.12C642.3 210.1 598 118.4 521.5 60.51zM528 448h-207l65-178.5l-60.13-21.87l-72.88 200.4H48C21.49 448 0 469.5 0 496C0 504.8 7.163 512 16 512h544c8.837 0 16-7.163 16-15.1C576 469.5 554.5 448 528 448z"
+            />
+          </svg>
+        </div>
+        <h5
+          class="mb-3 font-fragment-glare text-3xl font-extrabold text-stone-50"
+        >
+          Water Wizz
+        </h5>
+        <p class="mb-3">
+          Water Wizz was my first job ever, I was just 16 at the time. As a ride
+          attendant, I enforced rules as necessary to ensure safety and trained
+          several new employees. This is the water park featured in the popular
+          movie "Grown Ups"!
+        </p>
+        <span class="inline-block rounded-md bg-stone-800 px-4 py-2"
+          >2017 - 2018</span
+        >
+      </div>
+      <div class="max-w-sm md:max-w-md md:pl-[52px]">
+        <img
+          src="/_tmp/public/img/waterwizz.webp"
+          alt="waterwizz"
+          class="rounded-2xl"
+        />
+      </div>
+    </div>
+    <div class="mb-20 md:grid md:grid-cols-2">
+      <div class="relative mb-10 md:order-last md:mb-0 md:pl-[52px]">
+        <div
+          class="absolute -left-[86px] -top-[2px] flex h-14 w-14 items-center justify-center rounded-md bg-[#fff2a0] md:-left-[28px]"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="h-9 w-9 fill-stone-1000"
+          >
+            <path
+              d="M156.8 411.8l31.22-31.22l-60.04-53.09l-52.29 52.28C61.63 393.8 60.07 416.1 72 432l48 64C127.9 506.5 139.9 512 152 512c8.345 0 16.78-2.609 23.97-8c17.69-13.25 21.25-38.33 8-56L156.8 411.8zM224 159.1c44.25 0 79.99-35.75 79.99-79.1S268.3 0 224 0S144 35.75 144 79.1S179.8 159.1 224 159.1zM408.7 145c-12.75-18.12-37.63-22.38-55.76-9.75l-40.63 28.5c-52.63 37-124.1 37-176.8 0l-40.63-28.5C76.84 122.6 51.97 127 39.22 145C26.59 163.1 30.97 188 48.97 200.8l40.63 28.5C101.7 237.7 114.7 244.3 128 250.2L128 288h192l.0002-37.71c13.25-5.867 26.22-12.48 38.34-21.04l40.63-28.5C417.1 188 421.4 163.1 408.7 145zM320 327.4l-60.04 53.09l31.22 31.22L264 448c-13.25 17.67-9.689 42.75 8 56C279.2 509.4 287.6 512 295.1 512c12.16 0 24.19-5.516 32.03-16l48-64c11.94-15.92 10.38-38.2-3.719-52.28L320 327.4z"
+            />
+          </svg>
+        </div>
+        <h5
+          class="mb-3 font-fragment-glare text-3xl font-extrabold text-stone-50"
+        >
+          Born
+        </h5>
+        <p class="mb-3">
+          Here is where it all began. I've been around for
+          <span id="alive"></span> and counting. I grew up on Cape Cod, MA and
+          have lived here my entire life.
+        </p>
+        <span class="inline-block rounded-md bg-stone-800 px-4 py-2">2001</span>
+      </div>
+      <div class="max-w-sm md:order-first md:ml-auto md:max-w-md md:pr-[52px]">
+        <img src="/_tmp/public/img/canal.webp" alt="born" class="rounded-2xl" />
+      </div>
+    </div>
+  </section>
 
-  <a href="/projects/" class="article-card__viewall">View all projects</a>
-</section>
-
-<section>
-  <h2 class="section-header">Contact</h2>
-  <div class="contact-card">
-    <h5 class="contact-card__title">
-      <i class="contact-card__icon fa fa-envelope"></i>Email
-    </h5>
-    <p class="contact-card__desc">jpetrillo119@gmail.com</p>
-  </div>
-</section>
+  <section class="grid grid-cols-1 gap-20 sm:grid-cols-2 sm:gap-6 lg:gap-10">
+    <div>
+      <h2 class="mb-6 font-fragment-glare text-3xl font-extrabold">
+        Latest Posts
+      </h2>
+      {%- for post in collections.post.slice(collections.post.length-2,
+      collections.post.length) | reverse -%}
+      <a href="{{ post.url }}">
+        <div
+          class="mb-6 rounded-md border-2 border-stone-800 p-4 transition-[background-color] duration-150 ease-out hover:bg-stone-800"
+        >
+          <h3 class="mb-1 text-lg underline">
+            {{ post.data.title }}
+          </h3>
+          <span class="text-base text-stone-300">
+            {{ post.data.date | date }}
+          </span>
+        </div>
+      </a>
+      {%- endfor %}
+      <a class="underline" href="/blog/">View all blog posts</a>
+    </div>
+    <div>
+      <h2 class="mb-6 font-fragment-glare text-3xl font-extrabold">
+        Latest Projects
+      </h2>
+      {%- for project in collections.project.slice(collections.project.length-2,
+      collections.project.length) | reverse -%}
+      <a href="{{ project.url }}">
+        <div
+          class="mb-6 rounded-md border-2 border-stone-800 p-4 transition-[background-color] duration-150 ease-out hover:bg-stone-800"
+        >
+          <h3 class="mb-1 text-lg underline">
+            {{ project.data.title }}
+          </h3>
+          <span class="text-base text-stone-300">
+            {{ project.data.date | date }}
+          </span>
+        </div>
+      </a>
+      {%- endfor %}
+      <a class="underline" href="/projects/">View all projects</a>
+    </div>
+  </section>
+</div>
