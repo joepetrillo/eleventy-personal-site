@@ -2,6 +2,7 @@
 *.log
 *.scssc
 *.swp
+.parcel-cache
 .DS_Store
 .sass-cache
 .env
@@ -11,4 +12,5 @@ Thumbs.db
 
 # Node modules and output
 node_modules
+_tmp
 _site
