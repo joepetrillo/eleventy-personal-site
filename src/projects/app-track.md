@@ -16,13 +16,13 @@ Trying to keep track of job postings can be a pain. My [roommate](https://jackbi
 
 This project was built using a modern tech stack, including Typescript, React, React Router, TailwindCSS, Golang, Python, PostgreSQL, and AWS Lambda functions. We may have done a little overengineering 😅. Regardless, check out this diagram to see how our application works.
 
-![diagram](/_tmp/public/img/apptrack/diagram.png?as=webp)
+![diagram](/_tmp/public/img/app-track/diagram.png?as=webp)
 
 When users sign up, they must choose to receive internship updates, new grad updates, or both. Once a selection is made, and a valid email is entered, the user is added to our database and will begin to receive emails. We rate limit sign-ups using IP addresses to prevent spam.
 
 If a user wants to unsubscribe, they can go to the link at the bottom of any email we have sent. This URL contains their user ID so the API can ensure it matches the user ID of the email entered to be unsubscribed. It would be a significant flaw if we allowed anyone to unsubscribe any email without some form of verification. For example, I get the following error if I manually go to the unsubscribe page and try to remove Jack.
 
-![diagram](/_tmp/public/img/apptrack/unsub.png)
+![diagram](/_tmp/public/img/app-track/unsub.png)
 
 Every day at 12:00PM EST, an AWS serverless function is responsible for checking if either of the two GitHub repos have been updated. If there are any new jobs, they are added to our postings database, and emails are triggered to be sent out. Otherwise, nothing will happen.
 
