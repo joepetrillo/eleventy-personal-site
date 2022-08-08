@@ -12,7 +12,7 @@ ASCII Helper is a simple javascript project I created to quickly find the ASCII 
 
 I started this project with a design (like most projects). In Figma, I created a simple layout, as seen below. The [final result](https://ascii-helper.netlify.app) is slightly different, but the general color scheme and structure are the same. The CSS was reasonably simple for this design but demonstrated fundamental ideas.
 
-![Original design desktop](/_tmp/public/img/ascii-design.png)
+![Original design desktop](/_tmp/public/img/ascii-helper/ascii-design.png?as=webp)
 
 ## The Code
 

@@ -12,9 +12,9 @@ My first ever personal site (not this site) was an excellent way for me to pract
 
 The first step was creating a simple design in Figma. I wanted something clean and easy on the eyes. Here are the early designs I came up with. You can see the similarities in the finished product, especially in the overall structure/layout.
 
-![Original design desktop](/_tmp/public/img/Desktop.png)
+![Original design desktop](/_tmp/public/img/first-personal-website/Desktop.png?as=webp)
 
-![Original design mobile](/_tmp/public/img/Mobile.png)
+![Original design mobile](/_tmp/public/img/first-personal-website/Mobile.png?as=webp)
 
 ## The SSG
 
