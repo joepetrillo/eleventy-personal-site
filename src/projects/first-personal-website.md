@@ -4,7 +4,7 @@ date: "2021-12-30"
 description: "This was a great way to practice my CSS skills and dive into using a static site generator for the first time. I post my blog posts, project updates, and anything else I want here."
 ---
 
-[Live Website](https://old-site--jpetrillo.netlify.app)
+[Live Website](https://old-site--jpetrillo.netlify.app) | [GitHub Repository](https://github.com/joepetrillo/eleventy-personal-site/tree/old-site)
 
 My first ever personal site (not this site) was an excellent way for me to practice my basic HTML, CSS, and Javascript fundamentals. I used a static site generator for the first time and found it made the project much more manageable.
 
