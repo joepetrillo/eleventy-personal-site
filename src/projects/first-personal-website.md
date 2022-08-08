@@ -4,6 +4,8 @@ date: "2021-12-30"
 description: "This was a great way to practice my CSS skills and dive into using a static site generator for the first time. I post my blog posts, project updates, and anything else I want here."
 ---
 
+[Live Website](https://old-site--jpetrillo.netlify.app)
+
 My first ever personal site (not this site) was an excellent way for me to practice my basic HTML, CSS, and Javascript fundamentals. I used a static site generator for the first time and found it made the project much more manageable.
 
 ## The Design
@@ -46,7 +48,7 @@ The Javascript used for this website is very minimal. I only used it for the mob
 
 ## Deployment
 
-Deployment was quick and easy, thanks to [Netlify](https://www.netlify.com). I used git and GitHub while developing the website, so I simply had to choose the repo and the build command for Netlify to use, and I was done! Now, whenever I push changes to the repo, the website is automatically redeployed and updated with the latest changes.
+Deployment was quick and easy, thanks to [Netlify](https://www.netlify.com). I used Git and GitHub while developing the website, so I simply had to choose the repo and the build command for Netlify to use, and I was done! Now, whenever I push changes to the repo, the website is automatically redeployed and updated with the latest changes.
 
 ## Conclusion
 
