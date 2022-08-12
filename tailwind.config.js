@@ -15,6 +15,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        "fraktion-mono": "fraktion-mono",
         "fragment-glare": "fragment-glare, serif",
         "fragment-text": "fragment-text, serif",
         "fragment-sans": "fragment-sans, sans-serif",
